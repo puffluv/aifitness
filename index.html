@@ -36,21 +36,7 @@
 <body>
 
 	<script src="https://apis.google.com/js/platform.js" async defer></script>
-	<script>
-		function onSignIn(googleUser) {
-			var profile = googleUser.getBasicProfile();
-			console.log('ID: ' + profile.getId()); // Вывод ID пользователя
-			console.log('Name: ' + profile.getName()); // Вывод имени пользователя
-			console.log('Image URL: ' + profile.getImageUrl()); // Вывод URL-адреса аватарки пользователя
-			console.log('Email: ' + profile.getEmail()); // Вывод адреса электронной почты пользователя
-			    // Hide the login button and display the profile login
-   document.querySelector('.g-signin2').style.display = 'none';
-  var userName = document.createElement('span');
-  userName.innerText = profile.getName();
-  userName.classList.add('user-name');
-  document.querySelector('nav ul').appendChild(userName);
-		}
-	</script>
+	<script src="js/signin.js"></script>
 	
 	<script>
   function signOut() {
