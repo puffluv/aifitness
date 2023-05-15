@@ -35,19 +35,10 @@
 </head>
 <body>
 
+	<!-- Авторизация oAuth (Google -->
 	<script src="https://apis.google.com/js/platform.js" async defer></script>
 	<script src="js/signin.js"></script>
-	
-	<script>
-  function signOut() {
-  var auth2 = gapi.auth2.getAuthInstance();
-  auth2.signOut().then(function () {
-    console.log('User signed out.');
-    document.getElementById("user-name").innerHTML = "";
-    document.querySelector(".g-signin2").style.display = "block";
-  });
-  }
-</script>
+	<script src="js/signout.js"></script>
 	
 	<!-- Меню -->
 	<nav>
