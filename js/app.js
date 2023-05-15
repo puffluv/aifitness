@@ -14,13 +14,6 @@ document.querySelector('.arrow-7').addEventListener('click', function() {
 	swiper.slideNext()
 })
 
-document.querySelector('.arrow-next').addEventListener('click', function() {
-	swiper.slideNext()
-})
-
-document.querySelector('.arrow-back').addEventListener('click', function() {
-	swiper.slidePrev()
-})
 
 
 

@@ -7,7 +7,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="google-signin-client_id" content="980654595572-jhlh7mctkn7iorkfcjkem5s7dceoag8p.apps.googleusercontent.com">
 
-	<title>Питание</title>
+	<title>AI Fitness</title>
 
 	<link rel="shortcut icon" href="/img/ico/icon.png" type="image/png">
 	<link rel="stylesheet" href="libs/swiper/swiper-bundle.min.css">
@@ -18,8 +18,12 @@
 
 	<link rel="stylesheet" href="css/main.css" media="screen">
 	<link rel="stylesheet" href="css/FirstSlide/Nav.css">
+	<link rel="stylesheet" href="css/FirstSlide/Welcome.css">
+	<link rel="stylesheet" href="css/FirstSlide/DownloadButton.css">
+	<link rel="stylesheet" href="css/FirstSlide/SocialMedia.css">
 	<link rel="stylesheet" href="css/FirstSlide/SliderNextBack.css">
 	<link rel="stylesheet" href="css/FirstSlide/Quote.css">
+	<link rel="stylesheet" href="css/FirstSlide/description.css">
 	<link rel="stylesheet" href="css/ThirdSlide/Feedback.css">
 	<link rel="stylesheet" href="css/ThirdSlide/FeedbackButton.css">
 	<link rel="stylesheet" href="css/FourthSlide/Menu.css">
@@ -32,21 +36,17 @@
 </head>
 <body>
 
-	<script src="https://apis.google.com/js/platform.js" async defer></script>
-	<script src="js/signin.js"></script>
-	<script src="js/signout.js"></script>
-	
 	<!-- Меню -->
 	<nav>
 		<span><a class="logo" href="blog.html">AiFitness</a></span>
 			<ul>
-				<li><a href="blog.html">Блог</a></li>
-		  		<li><a class="active" href="food.html">Питание</a></li>
+				<li><a class="active" href="#">Блог</a></li>
+		  		<li><a href="food.html">Питание</a></li>
      		 	<li><a href="#">Программы</a></li>
-     	 		<li><a href="#">Тренера</a></li>
+     	 		<li><a href="#">Тренер</a></li>
       			<li><a href="#">Контакты</a></li>
       			<li><div class="g-signin2" data-onsuccess="onSignIn"></div></li>
-      			<li><a href="#" onclick="signOut();">Sign out</a></li>
+      			<li><a href="#" onclick="signOut();">Выйти</a></li>
       			<li><div id="username"></div></li>
 			</ul>
 
@@ -57,55 +57,78 @@
 	
 	<div class="swiper slider">
 		<div class="swiper-wrapper slider__wrapper">
-
 			<!-- Первый слайд -->
 			<div class="swiper-slide slider__item">
+				<div class="slider__layer" data-swiper-parallax="35%" style="background-image: url(img/screen-1/layer-back.jpg);">
 				
-				<div class="slider__layer" data-swiper-parallax="35%" style="background-image: url(img/screen-1/layer-back.jpg);"></div>
-				<div class="slider__layer" data-swiper-parallax="25%" style="background-image: url(img/screen-1/layer-middle.png);"></div>
+					<div class="quote">
+						<span class="quote-first-text"><i>"Дело не в том, есть ли у вас <u>время</u>, <br> а в том, готовы ли вы <u>его выделить</u>."</i></span>
+						<span class="quote-sec-text"><i>"Если это не бросает вам вызов – оно <br> не изменит вас."</i></span>
+					</div>
+				
+				</div>
+				<div class="slider__layer" data-swiper-parallax="25%" style="background-image: url(img/screen-1/layer-middle.png);">
+
+					<!-- Скрипт текста -->
+					<div class="Welcome1">
+						<span class="text first-text">AI Fitness</span>
+						<span class="typed text sec-text"></span>
+						<script src="libs/typer/typed.min.js"></script>
+						<script src="js/typedjs.js"></script>
+					</div>
+
+				</div>
 				<canvas class="particles slider__layer" data-swiper-parallax="18%" data-color="#525A6D"></canvas>
 				<div class="slider__layer" data-swiper-parallax="14%" style="background-image: url(img/screen-1/layer-front.png);"></div> 
 
-				<!-- Кнопка перехода вперед -->
-				<a class="arrow-3">Ознакомиться подробнее
-					<svg class="arrow-3-icon" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
-						<g fill="none" stroke="white" stroke-width="1.5" stroke-linejoin="round" stroke-miterlimit="10">
-							<circle class="arrow-3-iconcircle" cx="16" cy="16" r="15.12"></circle>
-							<path class="arrow-3-icon--arrow" d="M16.14 9.93L22.21 16l-6.07 6.07M8.23 16h13.98"></path>
-						</g>
-					</svg>
+				<!-- Кнопка скачать -->
+				<a class="adownload" href="img/screen-1/img1.jpg" target="_blank" download>
+					<div class="download">
+						<div class="content">
+							<i class="bx bx-cloud-download"></i> 
+							<span class="button-text">Download</span>
+						</div>
+					</div>
 				</a>
 
+				<!-- Соц. сети -->
+				<div class="social">
+					<a href="https://vk.com/e.zeilan" target="_blank"><i class="fa fa-vk" aria-hidden="true"></i>VKontake</a>
+					<a href="#"><i class="fa fa-youtube" aria-hidden="true"></i>YouTube</a>
+					<a href="#"><i class="fa fa-instagram" aria-hidden="true"></i>Instagram</a>
+					<a href="#"><i class="fa fa-telegram" aria-hidden="true"></i>Telegram</i></a>
+				</div>
+
+				<!-- Кнопка ознакомления -->
+				<div class="arrow-7">
+					<p>Подробнее</p>
+					<span></span>
+					<span></span>
+
+				</div>
+				
 			</div>
 
 			<!-- Второй слайд -->
-			<div id="screen2" class="swiper-slide slider__item">
+			<div class="swiper-slide slider__item">
 
-				<div class="slider__layer" data-swiper-parallax="50%" style="background-image: url(img/screen-2/layer-background.png);"></div>
-				<div class="slider__layer" data-swiper-parallax="40%" style="background-image: url(img/screen-2/layer-back.png);"></div>
-				<div class="slider__layer" data-swiper-parallax="30%" style="background-image: url(img/screen-2/layer-middle.png);"></div>
-				<div class="slider__layer" data-swiper-parallax="16%" style="background-image: url(img/screen-2/layer-front.png);"></div>
+				<div class="slider__layer" data-swiper-parallax="50%" style="background-image: url(img/screen-2/layer-background.png);">
+					
+				</div>
+				<div class="slider__layer" data-swiper-parallax="40%" style="background-image: url(img/screen-2/layer-back.png);">
+					<div class="info">
+						<h1 class="h1-description">О приложении</h1>
+					</div>
+				</div>
+				<div class="slider__layer" data-swiper-parallax="30%" style="background-image: url(img/screen-2/layer-middle.png);">
+					<div class="descriptioninfo">
+						<img src="img/screen-1/app1.jpg" id="my-image">
+					</div>
+				</div>
+				<canvas class="particles slider__layer" data-swiper-parallax="18%" data-color="#525A6D"></canvas>
+				<div class="slider__layer" data-swiper-parallax="16%" style="background-image: url(img/screen-2/layer-front.png);">
 
-				<!-- Кнопка перехода назад -->
-				<a class="arrow-back">
-					<svg class="arrow-3-icon" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
-						<g fill="none" stroke="white" stroke-width="1.5" stroke-linejoin="round" stroke-miterlimit="10">
-							<circle class="arrow-3-iconcircle" cx="16" cy="16" r="15.12"></circle>
-							<path class="arrow-3-icon--arrow" d="M22.7 16H8.3M15.7 22.6L8.3 16l7.4-6.6"></path>
-						</g>
-					</svg>
-					Вернуться назад
-				</a>
-
-				<!-- Кнопка перехода вперед -->
-				<a class="arrow-next">Далее
-					<svg class="arrow-3-icon" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
-						<g fill="none" stroke="white" stroke-width="1.5" stroke-linejoin="round" stroke-miterlimit="10">
-						<circle class="arrow-3-iconcircle" cx="16" cy="16" r="15.12"></circle>
-						<path class="arrow-3-icon--arrow" d="M16.14 9.93L22.21 16l-6.07 6.07M8.23 16h13.98"></path>
-						</g>
-					</svg>
-				</a>
+				</div>
 
 			</div>
 
@@ -212,5 +235,8 @@
 	<script src="js/chat.js"></script>
 	<script src="js/download.js"></script>
 	<script src="js/feedbackpopup.js"></script>
+	<script src="https://apis.google.com/js/platform.js" async defer></script>
+	<script src="js/signin.js"></script>
+	<script src="js/signout.js"></script>
 </body>
 </html>

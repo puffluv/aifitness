@@ -19,3 +19,14 @@
 	font-size: 3.2rem;
 	font-family: "Alumni Sans";
 }
+
+.h1-description {
+	position: absolute;
+	color: white;
+	margin-top: 110px;
+	margin-left: 765px;
+	font-size: 5.2rem;
+	font-family: "Alumni Sans";
+	font-weight: normal;
+
+}
