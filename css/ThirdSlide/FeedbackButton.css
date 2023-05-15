@@ -1,0 +1,19 @@
+.feedbackbutton {
+	display: flex;
+	position: absolute;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	top: 40%;
+	left: 19%;																					
+	height: 95px;
+	width: 360px;
+	background: #0e0e0e;
+	border-radius: 55px;
+	box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+	cursor: pointer;
+	overflow: hidden;
+    color: #fff;
+	font-size: 28px;
+	margin-left: 8px;
+}
