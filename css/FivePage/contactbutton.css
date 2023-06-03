@@ -1,0 +1,19 @@
+.send {
+    width: 135px;
+    background: #2c4798;
+    color: white;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 20px;
+    border: none;
+}
+
+.thanks{
+    display: none;
+    margin: 10px 20px;
+    padding: 15px;
+    color: #2c4798;
+    width: 400px;
+    font-size: 23px;
+    transition: 0.5s;
+}

@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="google-signin-client_id" content="205962997112-1kg96l2s5re4sfub5qiaaligd1nnvqd5.apps.googleusercontent.com">
+
+	<title>AI Fitness</title>
+
+	<link rel="shortcut icon" href="/img/ico/icon.png" type="image/png">
+	<link rel="stylesheet" href="libs/swiper/swiper-bundle.min.css">
+	<script src="libs/swiper/swiper-bundle.min.js" defer></script>
+	<script src="libs/particles/particles.js" defer></script>
+	<script src="js/app.js" defer></script>
+
+	<link rel="stylesheet" href="css/FirstPage/FirstStyle.css">
+	<link rel="stylesheet" href="css/main.css" media="screen">
+	<link rel="stylesheet" href="css/FirstPage/Nav.css">
+	<link rel="stylesheet" href="css/FirstPage/Welcome.css">
+	<link rel="stylesheet" href="css/FirstPage/DownloadButton.css">
+	<link rel="stylesheet" href="css/FirstPage/SocialMedia.css">
+	<link rel="stylesheet" href="css/FirstPage/SliderNextBack.css">
+	<link rel="stylesheet" href="css/FirstPage/Quote.css">
+	<link rel="stylesheet" href="css/FirstPage/description.css">
+	<link rel="stylesheet" href="css/FirstPage/blog.css">
+	<link rel="stylesheet" href="css/FourthPage/Feedback.css">
+	
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Alumni+Sans&family=Alumni+Sans+Pinstripe&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+</head>
+<body>
+
+	<!-- Библиотека google identity services library -->
+	<script src="https://accounts.google.com/gsi/client" async defer></script>
+	<!-- Меню -->
+	<nav>
+		<span><a class="logo" href="index.html">AiFitness</a></span>
+			<ul>
+				<li><a class="active" href="index.html">AI Fitness</a></li>
+		  		<li><a href="food.html">Питание</a></li>
+     	 		<li><a href="trainer.html">Тренер</a></li>
+      			<li><a href="contact.html">Контакты</a></li>
+				<li class="signin">
+					<a href="#" id="custom-google-btn" class="active">
+						<i class="fa fa-google" aria-hidden="true"></i> 
+						Войти
+					</a>
+				</li>
+				<li class="signout">
+					
+				</li>
+			</ul>
+		<label id="icon">
+		<i class="fa fa-bars"></i>
+		</label>
+	</nav>
+
+
+	<div class="swiper slider">
+		<div class="swiper-wrapper slider__wrapper">
+			<!-- Первый слайд -->
+			<div class="swiper-slide slider__item">
+				<div class="slider__layer layers layer-1" data-swiper-parallax="35%" style="background-image: url(img/screen-1/layer-back.jpg);">
+				
+					<div class="quote">
+						<span class="quote-first-text"><i>"Дело не в том, есть ли у вас <u>время</u>, <br> а в том, готовы ли вы <u>его выделить</u>."</i></span>
+						<span class="quote-sec-text"><i>"Если это не бросает вам вызов – оно <br> не изменит вас."</i></span>
+					</div>
+				
+				</div>
+				<div class="slider__layer layers layer-2" data-swiper-parallax="25%" style="background-image: url(img/screen-1/layer-middle.png);">
+
+					<!-- Скрипт текста -->
+					<div class="Welcome1">
+						<span class="text first-text">AI Fitness</span>
+						<span class="typed text sec-text"></span>
+						<script src="libs/typer/typed.min.js"></script>
+						<script src="js/typedjs.js"></script>
+					</div>
+					<div class="textcontainer">
+					<!-- Download button -->
+					<span class="text-demover">Вы можете получить бесплатную ограниченную версию <br> приложения.</span>
+					<a class="downloadbuttonmenuapp" href="" target="_blank">
+						<span class="button-text1">Demo version</span>
+					</a>	
+
+					<span class="text-fullver">Для получения полной версии, оставьте заявку</span>
+					<a class="downloadbuttonmenuapp2" id="open-modal-btn">
+						<span class="button-text1">Full version</span>
+					</a>
+					</div>
+				</div>
+				<canvas class="particles slider__layer layer-second" data-swiper-parallax="18%" data-color="#525A6D"></canvas>
+				<div class="slider__layer layers layer-3" data-swiper-parallax="14%" style="background-image: url(img/screen-1/layer-front.png);"></div> 
+
+
+				<!-- Модальное окно фидбэка -->
+				<div class="feedback" id="modalfeedback">
+					<div class="feedbackmodal">
+						<!-- Кнопка закрытия окна -->
+						<button id="close-modalfeedback" class="modal__close-btn">
+							<svg width="25" height="25" viewBox="0 0 23 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M2.09082 0.03125L22.9999 22.0294L20.909 24.2292L-8.73579e-05 2.23106L2.09082 0.03125Z" fill="#333333"/>
+							<path d="M0 22.0295L20.9091 0.0314368L23 2.23125L2.09091 24.2294L0 22.0295Z" fill="#333333"/>
+							</svg>
+						</button>
+						<!-- Форма обратной связи -->
+						<form class="feedbackform" method="POST">
+							<input type="hidden" name="project_name" value="Фидбек">
+							<input type="hidden" name="admin_email" value="alibihasenov@aktsept-stroy.kz">
+							<input type="hidden" name="form_subject" value="Форма обратной связи AiFitness">
+			
+							<h2 class="WriteUs">Оставьте заявку</h2>
+							<label class="WriteUslabel">Введите Ваше имя</label>
+							<input type="text" name="Name" placeholder="Имя" required>
+							<label class="WriteUslabel">Введите Вашу эл. почту</label>
+							<input type="email" name="E-mail" placeholder="Электронная почта" required>
+							<label class="WriteUslabel">Введите Ваш номер телефона</label>
+							<input type="tel" name="Phone" placeholder="Номер телефона">
+							<label class="WriteUslabel">Введите сообщение</label>
+							<textarea name="Message" cols="30" rows="5" placeholder="Ваше обращение.."></textarea>
+							<button class="send">Отправить</button>
+							<div class="thanks">Спасибо за Ваше сообщение, мы обязательно прочтем его и по возможности ответим!</div>
+						</form>
+					</div>
+				</div>
+
+
+				<!-- Соц. сети -->
+				<div class="social">
+					<a href="https://vk.com/e.zeilan" target="_blank"><i class="fa fa-vk" aria-hidden="true"></i>VKontake</a>
+					<a href="#"><i class="fa fa-youtube" aria-hidden="true"></i>YouTube</a>
+					<a href="#"><i class="fa fa-instagram" aria-hidden="true"></i>Instagram</a>
+					<a href="#"><i class="fa fa-telegram" aria-hidden="true"></i>Telegram</i></a>
+				</div>
+
+				<!-- Кнопка ознакомления -->
+				<div class="arrow-7">
+					<p>Подробнее</p>
+					<span></span>
+					<span></span>
+
+				</div>
+				
+			</div>
+
+			<!-- Второй слайд -->
+			<div class="swiper-slide slider__item">
+
+				<div class="slider__layer" data-swiper-parallax="50%" style="background-image: url(img/screen-2/layer-background.png);">
+					
+				</div>
+				<div class="slider__layer" data-swiper-parallax="40%" style="background-image: url(img/screen-2/layer-back.png);">
+					<div class="info">
+						<h1 class="h1-description">О приложении</h1>
+					</div>
+				</div>
+				<div class="slider__layer" data-swiper-parallax="30%" style="background-image: url(img/screen-2/layer-middle.png);">
+					<div class="description">
+						<div class="descriptiontext">
+							<span class="spandescription">Наше <span class="pdescriptiontext">фитнес-приложение</span> представляет собой 
+							<span class="descriptionunderline">инновационное решение, которое использует</span>
+							<span class="descriptionuuderline">передовые технологие нейросетей для</span>
+							<span class="descriptiounnderline">предоставления уникального и </span>
+							<span class="descriptiouuuderline">персонализированного опыта</span>
+							<span class="descriptionunderlene">тренировок.</span>
+						</span>
+						</div>
+						<div class="descriptioninfo">
+							<img src="img/screen-1/app1.png" class="appimg1">
+						</div>
+					</div>
+				</div>
+				<canvas class="particles slider__layer" data-swiper-parallax="18%" data-color="#525A6D"></canvas>
+				<div class="slider__layer" data-swiper-parallax="16%" style="background-image: url(img/screen-2/layer-front.png);">
+					<div class="descriptioninfo2">
+						<img src="img/screen-1/app2.png" class="appimg2">
+					</div>
+					<div class="descriptiontext2">
+						<span class="spandescription2">C нашим <span class="pdescriptiontext2">приложением</span> </span>
+						<span class="spandescription3">вы сможете создавать программы,</span>
+						<span class="spandescription4">адаптированные уровню физической подготовки,</span>
+						<span class="spandescription5">соответствовать Вашим индивидуальным целям.</span>
+						<span class="spandescription6">Наша цель - вдохновлять, развивать и преображать.</span>
+					</div>
+
+					
+					
+				</div>
+
+			</div>
+
+			<!-- Третий слайд -->
+			<div class="swiper-slide slider__item">
+				<div class="slider__layer" data-swiper-parallax="29%" style="background-image: url(img/screen-3/layer-back.png);"></div>
+				<canvas class="particles slider__layer" data-swiper-parallax="25%" data-color="#fff"></canvas>
+				<div class="slider__layer" data-swiper-parallax="16%" style="background-image: url(img/screen-3/layer-front.png);"></div>
+				
+				<div class="policy">
+					<a href="policy.html" target="_blank">Политика конфиденциальных данных</a>
+				</div>
+
+				<div class="blog">
+					<div class="blogcontent">
+						<h2>Обновления приложения</h2>
+						<span class="CommentBlog">Вы можете оставить свой комментарий:</span>
+						<img src="img/screen-1/app3.png" class="appimg1">
+						<span class="LastUpdateh1">Last Update:</span>
+						<span class="LastUpdatet1">01 Juny 2023</span>
+						<span class="LastUpdatet2">Мы с радостью сообщаем о выходе </span>
+						<span class="LastUpdatet3">приложения AiFitness на базе Android!</span>
+						<span class="LastUpdatet4">Теперь вы можете легко и удобно скачать</span>
+						<span class="LastUpdatet5">наше приложение на свое устройство на</span>
+						<span class="LastUpdatet6">базе операционной системы Android.</span>
+					</div>
+				</div>
+
+				<!-- Комментарии -->
+				<div class="container_comment">
+					<div class="displayFlex" id="comment">
+						<input type="text" name="comment" class="input_comment" placeholder="Введите комментарий" style="font: size 20px;    font-family: 'Montserrat', sans-serif;width: 400px;background-color: rgba(0,0,0,0);border: 0px;border-bottom: 2px solid gray;" required="required" />
+						<button class="button_comment" onclick="send()">Отправить</button>
+					</div>
+					<div class="comment_main">
+						
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</div>
+	
+	<!-- Всплывающая авторизация -->
+	<div class="d-hidden" style="display: none;">
+		<div class="g_id_signin" data-type="standard"></div>
+		<div id="g_id_onload"
+			data-client_id="205962997112-1kg96l2s5re4sfub5qiaaligd1nnvqd5.apps.googleusercontent.com"
+			data-callback="handleCredentialResponse"
+			data-type="icon"
+			 data-size="large"
+			 data-theme="outline"
+			 data-text="sign_in_with"
+			 data-shape="rectangular"
+			 data-logo_alignment="left"
+			>
+		</div>
+	</div>
+	<!-- Скрипты Js -->
+	<script src="js/animation.js"></script>
+	<script src="js/menu.js"></script>
+	<script src="js/email.js" defer></script>
+	<script src="https://code.jquery.com/jquery-3.7.0.js"></script>
+	<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+	<script src="js/chat.js"></script>
+	<script src="js/download.js"></script>
+	<script src="js/feedbackpopup.js"></script>
+	<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+	<script>
+	const googleBtn = document.getElementById('custom-google-btn');
+const signin = document.querySelector(".signin");
+const signout = document.querySelector(".signout");
+const comment = document.getElementById("comment");
+refresh();
+googleBtn.addEventListener('click', onClickGoogle);
+
+function onClickGoogle () {
+    document.querySelector('.g_id_signin div[role=button]').click();
+}
+async function handleCredentialResponse(googleUser) { // Логин
+    let userData = await axios.get("php/auth/login.php",{ params: { token: googleUser.credential } }).then(res => {
+        return res.data;
+    });
+	localStorage.setItem("token",googleUser.credential); // Создание токена
+    signin.innerHTML = `
+    <img src=${userData.user.picture} style="width:40px;height:40px;border-radius:50%;vertical-align:middle;" alt="avatar"> 
+   `; // Использование аватарки пользователя
+    signout.innerHTML = `
+    <a onclick="logout()">Выйти</a>
+    `;
+    comment.innerHTML = `<input type="text" name="comment" class="input_comment" placeholder="Введите комментарий" />
+         <button class="button_comment" onclick="send()">Отправить</button>`;
+}
+
+async function refresh(){ // Сохранение токена
+    let userData = await axios.get("php/auth/refresh.php",{params:{token:localStorage.getItem("token")}}).then(res => {
+        return res.data;
+    });
+    if(userData.code > 200){ // Перестроение UI в зависимости от ошибки
+        signin.innerHTML = `
+            <a href="#" id="custom-google-btn" onclick="onClickGoogle()" class="active">
+                <i class="fa fa-google" aria-hidden="true"></i> 
+                Войти
+            </a>
+        `;
+        signout.innerHTML = "";
+        comment.innerHTML = ``;
+
+    }else{
+        signin.innerHTML = `
+         <img src=${userData.user.picture} style="width:40px;height:40px;border-radius:50%;vertical-align:middle;" alt="avatar">
+        `;
+         signout.innerHTML = `
+             <a onclick="logout()">Выйти</a>
+         `;
+         comment.innerHTML = `<input type="text" name="comment" class="input_comment" val placeholder="Введите комментарий" />
+         <button class="button_comment" onclick="send()">Отправить</button>`;
+    }
+}
+
+async function logout(){
+    await axios.get("php/auth/logout.php");
+	localStorage.removeItem("token");
+    signin.innerHTML = `
+    <a href="#" id="custom-google-btn" class="active">
+        <i class="fa fa-google" aria-hidden="true"></i> 
+        Войти
+    </a>
+   `;
+    signout.innerHTML = "";
+    comment.innerHTML = ``;
+}
+	</script>
+
+	<script>
+	const commentForm = document.getElementById("comment");
+		const comment_main = document.querySelector(".comment_main");
+
+function send(){
+    axios.get("php/auth/create.php",{params:{comment:document.querySelector(".input_comment").value,token:localStorage.getItem("token")}}).
+    then(res => setComments(res.data))
+    .catch(res => console.log(res));
+    document.querySelector(".input_comment").value = "";
+};
+getComments();
+
+async function getComments(){
+   await axios.get("php/auth/get.php")
+    .then(res => setComments(res.data))
+    .catch(res => console.log(res));
+}
+
+function setComments(comments){
+    let innerHTMLComment = "";
+	let commentsArray = Object.values(comments);
+    for(let i = 0; i < commentsArray.length;i++){
+        innerHTMLComment += `
+        <div class="comment">
+            <img src=${commentsArray[i].avatar} style="width:40px;height:40px;border-radius:50%;vertical-align:middle;" alt="">
+            <div class="displayGrid">
+                <h3 class="commentText">${commentsArray[i].name}</h3>
+                <p class="commentText">${commentsArray[i].comment}</p>
+            </div>
+			<h4 style="margin-left:auto" class="commentText">${commentsArray[i].created_at}</h4>
+        </div>`;
+    }
+    comment_main.innerHTML = innerHTMLComment;
+}
+	</script>
+</body>
+</html>

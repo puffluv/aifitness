@@ -1,0 +1,37 @@
+.quote {
+	position: relative;
+	display: flex;
+	overflow: hidden;
+    flex-direction: column;
+}
+
+.quote-first-text {
+	color: silver;
+	margin-top: 240px;
+	margin-left: 1300px;
+	font-size: 30px;
+	font-family: 'Montserrat', sans-serif;
+}
+.quote-sec-text {
+    color: silver;
+	margin-top: 200px;
+	margin-left: 1300px;
+	font-size: 28px;
+	font-family: 'Montserrat', sans-serif;
+}
+@media  screen and (min-width: 1440px) {
+	.quote {
+		right: 200px;
+	}
+} 
+@media  screen and (min-width: 1700px) {
+	.quote {
+		right: 75px;
+	}
+} 
+@media  screen and (min-width: 1920px) {
+	.quote {
+		right: 15px;
+	}
+} 
+

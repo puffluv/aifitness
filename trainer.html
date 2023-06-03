@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="google-signin-client_id" content="980654595572-jhlh7mctkn7iorkfcjkem5s7dceoag8p.apps.googleusercontent.com">
+
+	<title>Персональный тренер</title>
+
+	<link rel="shortcut icon" href="/img/ico/icon.png" type="image/png">
+	<link rel="stylesheet" href="libs/swiper/swiper-bundle.min.css">
+	<script src="libs/swiper/swiper-bundle.min.js" defer></script>
+	<script src="libs/particles/particles.js" defer></script>
+	<script src="js/app.js" defer></script>
+
+
+	<link rel="stylesheet" href="css/main.css" media="screen">
+	<link rel="stylesheet" href="css/FirstPage/Nav.css">
+	<link rel="stylesheet" href="css/FourthPage/Feedback2.css">
+    <link rel="stylesheet" href="css/FirstPage/SliderNextBack.css">
+	<link rel="stylesheet" href="css/FourthSlide/Menu.css">
+	<link rel="stylesheet" href="css/FourthPage/Trainers.css">
+	<link rel="stylesheet" href="css/FourthPage/Feedback.css">
+	<link rel="stylesheet" href="css/FourthPage/FeedbackButton.css">
+	<link rel="stylesheet" href="css/FourthPage/Prices.css">
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Alumni+Sans&family=Alumni+Sans+Pinstripe&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+</head>
+<body>
+	<!-- Библиотека google identity services library -->
+	<script src="https://accounts.google.com/gsi/client" async defer></script>
+	<!-- Меню -->
+	<nav>
+		<span><a class="logo" href="index.html">AiFitness</a></span>
+			<ul>
+				<li><a href="index.html">AI Fitness</a></li>
+				<li><a href="food.html">Питание</a></li>
+				<li><a class="active" href="trainer.html">Тренер</a></li>
+				<li><a href="contact.html">Контакты</a></li>
+				<li class="signin">
+					<a href="#" id="custom-google-btn" class="active">
+					<i class="fa fa-google" aria-hidden="true"></i> 
+					Войти
+					</a>
+				</li>
+				<li class="signout">
+						
+				</li>
+			</ul>
+		<label id="icon">
+			<i class="fa fa-bars"></i>
+		</label>
+	</nav>
+
+	<div class="swiper slider">
+		<div class="swiper-wrapper slider__wrapper">
+
+			<!-- Первый слайд -->
+			<div class="swiper-slide slider__item">
+				<div class="slider__layer layers layer-1" data-swiper-parallax="35%" style="background-image: url(img/screen-1/layer-back.jpg);"></div>
+				<div class="slider__layer layers layer-2" data-swiper-parallax="25%" style="background-image: url(img/screen-1/layer-middle.png);">
+				<!-- Заголовок -->
+				<div class="our-trainer">
+					<h1>Ваш персональный тренер</h1>
+					<img src="img/screen-1/Daniil.png" alt="">
+					<span class="trainer-name">Тусаев Даниил</span>
+					<span class="trainer-description">Опытный и высококвалифицированный персональный тренер, специализирующийся на фитнесе и з
+						доровом образе жизни. Его подход к тренировкам основан на научных
+						принципах и личном опыте, что позволяет ему создавать эффективные и безопасные программы для своих клиентов.</span>
+				</div>
+				</div>
+				<canvas class="particles slider__layer" data-swiper-parallax="18%" data-color="#525A6D"></canvas>
+				<span class="trainer-description5">С Даниилом Тусаевым в качестве персонального тренера вы можете быть уверены, что получите профессиональное руководство, индивидуальное внимание и максимальную поддержку на пути к своей физической и фитнес-цели.</span>
+				<!-- Кнопка фидбэка -->
+				<a class="feedbackbutton" id="open-modal-btn">
+					<span class="button-text">Оставить заявку</span>
+				</a>
+
+				<!-- Модальное окно фидбэка -->
+				<div class="feedback" id="modalfeedback">
+					<div class="feedbackmodal">
+						<!-- Кнопка закрытия окна -->
+						<button id="close-modalfeedback" class="modal__close-btn">
+							<svg width="25" height="25" viewBox="0 0 23 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M2.09082 0.03125L22.9999 22.0294L20.909 24.2292L-8.73579e-05 2.23106L2.09082 0.03125Z" fill="#333333"/>
+							<path d="M0 22.0295L20.9091 0.0314368L23 2.23125L2.09091 24.2294L0 22.0295Z" fill="#333333"/>
+							</svg>
+						</button>
+						<!-- Форма обратной связи -->
+						<form class="feedbackform" method="POST">
+							<input type="hidden" name="project_name" value="Фидбек">
+							<input type="hidden" name="admin_email" value="alibihasenov@aktsept-stroy.kz">
+							<input type="hidden" name="form_subject" value="Форма обратной связи AiFitness">
+			
+							<h2 class="WriteUs">Оставьте заявку</h2>
+							<label class="WriteUslabel">Введите Ваше имя</label>
+							<input type="text" name="Name" placeholder="Имя" required>
+							<label class="WriteUslabel">Введите Вашу эл. почту</label>
+							<input type="email" name="E-mail" placeholder="Электронная почта" required>
+							<label class="WriteUslabel">Введите Ваш номер телефона</label>
+							<input type="tel" name="Phone" placeholder="Номер телефона">
+							<label class="WriteUslabel">Введите сообщение</label>
+							<textarea name="Message" cols="30" rows="5" placeholder="Ваше обращение.."></textarea>
+							<button class="send">Отправить</button>
+							<div class="thanks">Спасибо за Ваше сообщение, мы обязательно прочтем его и по возможности ответим!</div>
+						</form>
+					</div>
+				</div>
+				
+				<div class="slider__layer layers layer-3" data-swiper-parallax="14%" style="background-image: url(img/screen-1/layer-front.png);"></div> 
+				
+				
+				<!-- Кнопка ознакомления -->
+				<div class="arrow-7">
+					<span></span>
+					<span></span>
+				</div>
+
+
+			</div>
+
+			<!-- Второй слайд -->
+			<div class="swiper-slide slider__item">
+				<div class="slider__layer" data-swiper-parallax="50%" style="background-image: url(img/screen-2/layer-background.png);">
+					<div class="howitworkstitle">
+						<span>Как это работает?</span>
+					</div>
+				</div>
+				<div class="slider__layer" data-swiper-parallax="40%" style="background-image: url(img/screen-2/layer-back.png);"></div>
+				<div class="slider__layer" data-swiper-parallax="30%" style="background-image: url(img/screen-2/layer-middle.png);"></div>
+				<canvas class="particles slider__layer" data-swiper-parallax="18%" data-color="#525A6D"></canvas>
+				<div class="slider__layer" data-swiper-parallax="16%" style="background-image: url(img/screen-2/layer-front.png);">
+
+					<div class="imagetrainer">
+						<img src="img/screen-2/trainer.png" alt="">
+					</div>
+					<div class="imagehowitworks">
+						<span class="textfirsthow">1. <span class="bluetext">Консультация и оценка:</span> В начале процесса персонального тренировочного программирования, 
+							тренер проводит консультацию для оценки целей, уровня физической подготовки и т.д.</span>
+						<span class="textsecondhow">2. <span class="bluetext">Планирование программы:</span> Основываясь на полученной информации, тренер разрабатывает 
+							индивидуальную тренировочную программу, которая соответствует Вашим целям и потребностям.</span>
+							<span class="textthirdhow">3. <span class="bluetext">Предоставление материалов:</span> Тренер предоставляет тренировочные программы, видеоинструкции, письменные материалы и другие ресурсы, необходимые 
+								для выполнения тренировок. Это может быть через электронную почту, специализированные приложения для тренировок или онлайн-платформы.</span>
+					</div>
+				</div>
+			</div>
+
+			<!-- Третий слайд -->
+			<div class="swiper-slide slider__item">
+				<div class="slider__layer" data-swiper-parallax="48%" style="background-image: url(img/screen-3/layer-back.png);">
+					<div class="tarifspan">
+						<span>Наши тарифные планы предлагают различные варианты и условия для подписки на услуг индивидуального тренера:</span>
+					</div>
+				</div>
+				<canvas class="particles slider__layer" data-swiper-parallax="25%" data-color="#938086"></canvas>
+				<div class="slider__layer" data-swiper-parallax="16%" style="background-image: url(img/screen-3/layer-front.png);"></div>
+				<div class="tabs">
+					<input id="tab1" type="radio" name="tabs" checked>
+					<label class="tablabels" for="tab1">Оплата месяц</label>
+					<input id="tab2" type="radio" name="tabs" >
+					<label class="tablabels" for="tab2">Оплата год</label>
+					<span class="switch"></span>
+				 
+					<section id="content1">
+					   <div class="pricing-wrapper">
+						  <div class="pricing-tables">
+							 <div class="pricing-item">
+								<div class="item-inner">
+								   <div class="item-header">
+									  <div class="title">
+										 <b>Стандарт</b>
+										 <span>Выбор пользователей</span>
+									  </div>
+									  <div class="price">
+										 <b>5999₸</b><span>в месяц</span>
+									  </div>
+								   </div>
+								   <ul class="features">
+									  <li>12 Индивидуальных тренировок</li>
+									  <li>Бесплатная консультация</li>
+								   </ul>
+								</div>
+							 </div>
+							 <div class="pricing-item">
+								<div class="item-inner">
+								   <div class="item-header">
+									  <div class="title">
+										 <b>Комфорт</b>
+										 <span>Оптимальный выбор</span>
+									  </div>
+									  <div class="price">
+										 <b>6999₸</b><span>в месяц</span>
+									  </div>
+								   </div>
+								   <ul class="features">
+									  <li>16 Индивидуальных тренировок</li>
+									  <li>Ведение статистики</li>
+									  <li>Бесплатная консультация</li>
+								   </ul>
+								</div>
+							 </div>
+							 <div class="pricing-item">
+								<div class="item-inner">
+								   <div class="item-header">
+									  <div class="title">
+										 <b>Премиум</b>
+										 <span>Лучшее предложение</span>
+									  </div>
+									  <div class="price">
+										 <b>9999₸</b><span>в месяц</span>
+									  </div>
+								   </div>
+								   <ul class="features">
+									  <li>20 Индивидуальных тренировок</li>
+									  <li>Индивидуальное питание на месяц</li>
+									  <li>Ведение статистики</li>
+									  <li>Бесплатная консультация</li>
+								   </ul>
+								</div>
+							 </div>
+						  </div>
+					   </div>
+					</section>
+				 
+					<section id="content2">
+					   <div class="pricing-wrapper">
+						  <div class="pricing-tables">
+							 <div class="pricing-item">
+								<div class="item-inner">
+								   <div class="item-header">
+									  <div class="title">
+										 <b>Стандарт</b>
+										 <span>Выбор пользователей</span>
+									  </div>
+									  <div class="price">
+										 <b>3999₸</b><span>в месяц</span>
+									  </div>
+								   </div>
+								   <ul class="features">
+									  <li>12 Индивидуальных тренировок</li>
+									  <li>Бесплатная консультация</li>
+								   </ul>
+								</div>
+							 </div>
+							 <div class="pricing-item">
+								<div class="item-inner">
+								   <div class="item-header">
+									  <div class="title">
+										 <b>Комфорт</b>
+										 <span>Оптимальный выбор</span>
+									  </div>
+									  <div class="price">
+										 <b>4999₸</b><span>в месяц</span>
+									  </div>
+								   </div>
+								   <ul class="features">
+									  <li>16 Индивидуальных тренировок</li>
+									  <li>Ведение статистики</li>
+									  <li>Бесплатная консультация</li>
+									  
+								   </ul>
+								</div>
+							 </div>
+							 <div class="pricing-item">
+								<div class="item-inner">
+								   <div class="item-header">
+									  <div class="title">
+										 <b>Премиум</b>
+										 <span>Лучшее предложение</span>
+									  </div>
+									  <div class="price">
+										 <b>5999₸</b><span>месяц</span>
+									  </div>
+								   </div>
+								   <ul class="features">
+									  <li>20 Индивидуальных тренировок</li>
+									  <li>Индивидуальное питание на месяц</li>
+									  <li>Ведение статистики</li>
+									  <li>Бесплатная консультация</li>
+								   </ul>
+								</div>
+							 </div>
+						  </div>
+					   </div>
+					</section>
+					<a class="feedbackbutton2" id="open-modal-btn2">Оставить заявку</a>
+					<!-- Модальное окно фидбэка -->
+					<div class="feedback2" id="modalfeedback2">
+					<div class="feedbackmodal2">
+					<!-- Кнопка закрытия окна -->
+						<button id="close-modalfeedback2" class="modal__close-btn2">
+						<svg width="25" height="25" viewBox="0 0 23 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path d="M2.09082 0.03125L22.9999 22.0294L20.909 24.2292L-8.73579e-05 2.23106L2.09082 0.03125Z" fill="#333333"/>
+						<path d="M0 22.0295L20.9091 0.0314368L23 2.23125L2.09091 24.2294L0 22.0295Z" fill="#333333"/>
+						</svg>
+						</button>
+						<!-- Форма обратной связи -->
+						<form class="feedbackform2" method="POST">
+							<input type="hidden" name="project_name" value="Фидбек">
+							<input type="hidden" name="admin_email" value="alibihasenov@aktsept-stroy.kz">
+							<input type="hidden" name="form_subject" value="Форма заявки AiFitness">
+
+							<h2 class="WriteUs2">Оставьте заявку</h2>
+							<label class="WriteUslabel2">Введите Ваше имя</label>
+							<input type="text" name="Name" placeholder="Имя" required>
+							<label class="WriteUslabel2">Введите Вашу эл. почту</label>
+							<input type="email" name="E-mail" placeholder="Электронная почта" required>
+							<label class="WriteUslabel2">Введите Ваш номер телефона</label>
+							<input type="tel" name="Phone" placeholder="Номер телефона">
+							<label class="WriteUslabel2">Введите сообщение</label>
+							<textarea name="Message" cols="30" rows="5" placeholder="Ваше обращение.."></textarea>
+							<button class="send2">Отправить</button>
+							<div class="thanks2">Спасибо за Ваше сообщение, мы обязательно прочтем его и по возможности ответим!</div>
+						</form>
+					</div>
+					</div>
+				 </div>				 	 
+			</div>
+			<!-- Четвертый слайд -->
+			<div class="swiper-slide slider__item">
+				<div class="slider__layer" data-swiper-parallax="50%" style="background-image: url(img/screen-2/layer-background.png);"></div>
+				<div class="slider__layer" data-swiper-parallax="40%" style="background-image: url(img/screen-2/layer-back.png);"></div>
+				<div class="slider__layer" data-swiper-parallax="30%" style="background-image: url(img/screen-2/layer-middle.png);">
+					<span class="quotespanh">Мы гордимся тем, что получаем положительные отзывы о нашей работе и стремимся делиться ими с вами.</span>
+				</div>
+				<canvas class="particles slider__layer" data-swiper-parallax="18%" data-color="#525A6D"></canvas>
+				<div class="slider__layer" data-swiper-parallax="16%" style="background-image: url(img/screen-2/layer-front.png);"></div>
+				
+				<div class="policy">
+					<a href="policy.html" target="_blank">Политика конфиденциальных данных</a>
+				</div>
+
+				<div class="quotebody">
+				<div class="quotecontainer">
+					<div class="block">
+						<div class="quotecontent">
+							<img src="img/screen-3/quote.png" class="quote-img">
+							<p>Даниил - один из лучших персональных фитнес-тренеров, с которыми мне приходилось работать. Он действительно внимательно 
+								выслушивает мои цели и адаптирует программу тренировок, чтобы максимально эффективно достичь результатов.</p>
+							<img src="img/screen-3/face1.jpg" class="face">
+							<h3>Айман Турсунова</h3>
+						</div>
+					</div>
+
+					<div class="block">
+						<div class="quotecontent">
+							<img src="img/screen-3/quote.png" class="quote-img">
+							<p>Очень доволен сервисом! Спасибо Даниилу за индивидуальный подход к тренировкам и питанию. Он настоящий мастер мотивации.  Рекомендую его всем, кто ищет лучшего тренера для достижения своих фитнес-целей!</p>
+							<img src="img/screen-3/face2.jpg" class="face">
+							<h3>Александр Таскаев</h3>
+						</div>
+					</div>
+
+					<div class="block">
+						<div class="quotecontent">
+							<img src="img/screen-3/quote.png" class="quote-img">
+							<p>
+								Замечательный тренер, которому я очень благодарен за его профессионализм. С его помощью я достиг своих целей и значительно улучшил свою физическую форму. 
+								Он создал индивидуальную программу тренировок, которая идеально подходила под мои потребности и возможности.</p>
+							<img src="img/screen-3/face3.jpg" class="face">
+							<h3>Эмир Зейлан</h3>
+						</div>
+					</div>
+				</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- Скрипты Js -->
+	<script src="js/menu.js"></script>
+	<script src="js/email.js" defer></script>
+	<script src="https://code.jquery.com/jquery-3.7.0.js"></script>
+	<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+	<script src="js/chat.js"></script>
+	<script src="js/download.js"></script>
+	<script src="js/feedbackpopup.js"></script>
+	<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+	<script>
+	const googleBtn = document.getElementById('custom-google-btn');
+const signin = document.querySelector(".signin");
+const signout = document.querySelector(".signout");
+const comment = document.getElementById("comment");
+refresh();
+googleBtn.addEventListener('click', onClickGoogle);
+
+function onClickGoogle () {
+    document.querySelector('.g_id_signin div[role=button]').click();
+}
+async function handleCredentialResponse(googleUser) { // Логин
+    let userData = await axios.get("php/auth/login.php",{ params: { token: googleUser.credential } }).then(res => {
+        return res.data;
+    });
+	localStorage.setItem("token",googleUser.credential); // Создание токена
+    signin.innerHTML = `
+    <img src=${userData.user.picture} style="width:40px;height:40px;border-radius:50%;vertical-align:middle;" alt="avatar"> 
+   `; // Использование аватарки пользователя
+    signout.innerHTML = `
+    <a onclick="logout()">Выйти</a>
+    `;
+    comment.innerHTML = `<input type="text" name="comment" class="input_comment" placeholder="Введите комментарий" />
+         <button class="button_comment" onclick="send()">Отправить</button>`;
+}
+
+async function refresh(){ // Сохранение токена
+    let userData = await axios.get("php/auth/refresh.php",{params:{token:localStorage.getItem("token")}}).then(res => {
+        return res.data;
+    });
+    if(userData.code > 200){ // Перестроение UI в зависимости от ошибки
+        signin.innerHTML = `
+            <a href="#" id="custom-google-btn" onclick="onClickGoogle()" class="active">
+                <i class="fa fa-google" aria-hidden="true"></i> 
+                Войти
+            </a>
+        `;
+        signout.innerHTML = "";
+        comment.innerHTML = ``;
+
+    }else{
+        signin.innerHTML = `
+         <img src=${userData.user.picture} style="width:40px;height:40px;border-radius:50%;vertical-align:middle;" alt="avatar">
+        `;
+         signout.innerHTML = `
+             <a onclick="logout()">Выйти</a>
+         `;
+         comment.innerHTML = `<input type="text" name="comment" class="input_comment" val placeholder="Введите комментарий" />
+         <button class="button_comment" onclick="send()">Отправить</button>`;
+    }
+}
+
+async function logout(){
+    await axios.get("php/auth/logout.php");
+	localStorage.removeItem("token");
+    signin.innerHTML = `
+    <a href="#" id="custom-google-btn" class="active">
+        <i class="fa fa-google" aria-hidden="true"></i> 
+        Войти
+    </a>
+   `;
+    signout.innerHTML = "";
+    comment.innerHTML = ``;
+}
+	</script>
+
+	<script>
+	const commentForm = document.getElementById("comment");
+		const comment_main = document.querySelector(".comment_main");
+
+function send(){
+    axios.get("php/auth/create.php",{params:{comment:document.querySelector(".input_comment").value,token:localStorage.getItem("token")}}).
+    then(res => setComments(res.data))
+    .catch(res => console.log(res));
+    document.querySelector(".input_comment").value = "";
+};
+getComments();
+
+async function getComments(){
+   await axios.get("php/auth/get.php")
+    .then(res => setComments(res.data))
+    .catch(res => console.log(res));
+}
+
+function setComments(comments){
+    let innerHTMLComment = "";
+	let commentsArray = Object.values(comments);
+    for(let i = 0; i < commentsArray.length;i++){
+        innerHTMLComment += `
+        <div class="comment">
+            <img src=${commentsArray[i].avatar} style="width:40px;height:40px;border-radius:50%;vertical-align:middle;" alt="">
+            <div class="displayGrid">
+                <h3 class="commentText">${commentsArray[i].name}</h3>
+                <p class="commentText">${commentsArray[i].comment}</p>
+            </div>
+        </div>`;
+    }
+    comment_main.innerHTML = innerHTMLComment;
+}
+	</script>
+</body>
+</html>

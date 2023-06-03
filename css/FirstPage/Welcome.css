@@ -1,0 +1,120 @@
+.Welcome1 .text {
+	position: relative;
+	display: flex;
+	overflow: hidden;
+	margin-left: -100px;
+
+	
+}
+.Welcome1 .first-text {
+	color: white;
+	margin-top: 220px;
+	margin-left: 10%;
+	font-size: 5.2rem;
+	font-family: 'Montserrat', sans-serif;
+}
+.Welcome1 .sec-text {
+	color: white;
+	margin-top: 0px;	
+	margin-left: 7.5%;
+	font-size: 3.2rem;
+	font-family: 'Montserrat', sans-serif;
+}
+
+.Welcome1 {
+	opacity: 0;
+	filter: blur(10px);
+	animation-name: blur;
+	animation-duration: 1s;
+	animation-delay: 0.5s;
+	animation-fill-mode: forwards;
+  }
+  
+  @keyframes blur {
+	0% {
+	  opacity: 0;
+	  filter: blur(10px);
+	}
+	100% {
+	  opacity: 1;
+	  filter: blur(0);
+	}
+  }
+
+  @media  screen and (max-width: 1272px) {
+	.Welcome1 .first-text {
+		margin-top: 170px;
+		margin-left: 10%;
+		font-size: 4.2rem;
+	}
+	.Welcome1 .sec-text {
+		margin-top: 0px;	
+		margin-left: 10%;
+		font-size: 3.2rem;
+	}
+} 
+
+  @media  screen and (max-width: 1024px) {
+	.Welcome1 .first-text {
+		margin-top: 170px;
+		margin-left: 10%;
+		font-size: 3.2rem;
+	}
+	.Welcome1 .sec-text {
+		margin-top: 0px;	
+		margin-left: 10%;
+		font-size: 2.2rem;
+	}
+} 
+
+  @media  screen and (max-width: 768px) {
+	.Welcome1 .first-text {
+		margin-top: 170px;
+		margin-left: 10%;
+		font-size: 3.2rem;
+	}
+	.Welcome1 .sec-text {
+		margin-top: 0px;	
+		margin-left: 10%;
+		font-size: 2.2rem;
+	}
+} 
+
+  @media  screen and (max-width: 425px) {
+	.Welcome1 .first-text {
+		margin-top: 170px;
+		margin-left: 10%;
+		font-size: 3.2rem;
+	}
+	.Welcome1 .sec-text {
+		margin-top: 0px;	
+		margin-left: 10%;
+		font-size: 2.2rem;
+	}
+} 
+
+@media  screen and (max-width: 375px) {
+	.Welcome1 .first-text {
+		margin-top: 170px;
+		margin-left: 10%;
+		font-size: 3.2rem;
+	}
+	.Welcome1 .sec-text {
+		margin-top: 0px;	
+		margin-left: 10%;
+		font-size: 2.2rem;
+	}
+} 
+
+@media  screen and (max-width: 320px) {
+	.Welcome1 .first-text {
+		margin-top: 170px;
+		margin-left: 10%;
+		font-size: 3.2rem;
+	}
+	.Welcome1 .sec-text {
+		margin-top: 0px;	
+		margin-left: 10%;
+		font-size: 2.2rem;
+	}
+} 

@@ -1,0 +1,326 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Display:wght@400;500&display=swap');
+
+.tabs {
+    position: relative;
+    text-align: center;
+    margin-top: 400px;
+ 	font-family: 'Montserrat', sans-serif;
+ }
+
+ .tarifspan {
+   position: absolute;
+   text-align: center;
+   color: white;
+   font-size: 40px;
+   font-weight: 500;
+   margin-top: 190px;
+   margin-left: 40px;
+ }
+ 
+ .tabs input[type=radio] {
+    display: none;
+ }
+ 
+ .tabs .tablabels {
+    position: relative;
+    z-index: 1;
+    display: inline-block;
+    width: 130px;
+    height: 30px;
+    font-size: 25px;
+    line-height: 40px;
+    color: white;
+    cursor: pointer;
+    white-space: nowrap;
+    margin-right: 45.5px;
+ }
+ 
+ .switch {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    height: 60px;
+    width: 170px;
+    background: #2c4798;
+    border-radius: 40px;
+    transform: translateX(-180px);
+    transition: transform .5s;
+ }
+ 
+ .tabs section {
+    display: none;
+    padding: 40px 0 0;
+    animation: scale .7s ease-in-out;
+ }
+ 
+ @keyframes scale {
+    0% {
+       transform: scale(0.9);
+       opacity: 0;
+    }
+ 
+    50% {
+       transform: scale(1.01);
+       opacity: 0.5;
+    }
+ 
+    100% {
+       transform: scale(1);
+       opacity: 1;
+    }
+ }
+ 
+ .tabs #tab1:checked~#content1,
+ .tabs #tab2:checked~#content2 {
+    display: block;
+ }
+ 
+ .tabs input[type=radio]:checked+label+.switch {
+    color: white;
+ }
+ 
+ .tabs input[type=radio]:not(:checked)+label {
+    color: white;
+ }
+ 
+ .tabs input[type="radio"]:checked+label+.switch,
+ .tabs input[type="radio"]:checked+label:nth-of-type(n)+.switch {
+    transform: translateX(0);
+ }
+ 
+ .item-inner {
+    padding: 30px 20px;
+    border-radius: 10px;
+    background: white;
+    box-shadow: 0 2px 40px rgba(47, 43, 50, .2);
+ }
+ 
+ .pricing-tables .pricing-item:nth-child(2) .item-inner {
+    background: #2c4798;
+    color: white;
+ }
+ 
+ .item-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: left;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #D7D9DB;
+ }
+ 
+ .title *,
+ .price * {
+    display: block;
+    
+}
+ 
+ .title b,
+ .price b {
+    font-size: 30px;
+    margin-bottom: 8px;
+    font-weight: 500;
+ }
+ 
+ .title span,
+ .price span {
+    font-size: 17px;
+    color: #9c9ba1;
+ }
+ 
+ .price {
+    padding: 8px 10px;
+    border-radius: 6px;
+    background: #EFF7FE;
+ }
+ 
+ .pricing-tables .pricing-item:nth-child(2) .item-header {
+    border-bottom: 1px solid #222A3E;
+ }
+ 
+ .pricing-tables .pricing-item:nth-child(2) .price {
+    background: #4065d4;
+ }
+ 
+ .pricing-tables .pricing-item:nth-child(2) .price span {
+    color: rgba(255, 255, 255, 0.4);
+ }
+ 
+ .features {
+    list-style: none;
+    text-align: left;
+    margin-bottom: 30px;
+ }
+ 
+ .features li {
+    margin-bottom: 10px;
+    font-size: 17px;
+ }
+ 
+ .features li:before {
+    display: inline-block;
+    speak-as: none;
+    font-style: normal;
+    font-weight: 400;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    margin-right: 5px;
+ }
+ 
+ .pricing-button {
+    text-decoration: none;
+    background: #FF7556;
+    display: block;
+    font-size: 14px;
+    color: white;
+    height: 46px;
+    line-height: 46px;
+    border-radius: 6px;
+    text-align: center;
+    transition: .3s linear;
+ }
+ 
+ .pricing-button:hover {
+    background: #cc2500;
+ }
+
+ @media  screen and (max-width: 1024px) {
+   .tarifspan {
+      font-size: 30px;
+      font-weight: 500;
+      margin-top: 190px;
+      margin-left: 20px;
+    }
+   }
+
+ @media  screen and (max-width: 768px) {
+   .item-inner {
+      margin-top: 80px;
+      margin-left: 10px;
+      padding: 10px 10px;
+      border-radius: 20px;
+      background: white;
+      box-shadow: 0 2px 40px rgba(47, 43, 50, .2);
+   }
+    
+} 
+
+ @media  screen and (max-width: 425px) {
+   .tarifspan {
+      font-size: 30px;
+      font-weight: 500;
+      margin-top: 190px;
+      margin-left: 20px;
+    }
+    .tabs .tablabels {
+      width: 130px;
+      height: 30px;
+      font-size: 20px;
+      line-height: 40px;
+   }
+   .item-inner {
+      margin-top: 80px;
+      margin-left: 10px;
+      padding: 5px 5px;
+      width: 300px;
+      border-radius: 10px;
+      background: white;
+      box-shadow: 0 2px 40px rgba(47, 43, 50, .2);
+   }
+    
+} 
+
+ @media  screen and (max-width: 375px) {
+   .tarifspan {
+      font-size: 30px;
+      font-weight: 500;
+      margin-top: 190px;
+      margin-left: 20px;
+    }
+    .tabs .tablabels {
+      width: 130px;
+      height: 30px;
+      font-size: 20px;
+      line-height: 40px;
+   }
+   .item-inner {
+      margin-top: 80px;
+      margin-left: 10px;
+      padding: 5px 5px;
+      width: 300px;
+      border-radius: 10px;
+      background: white;
+      box-shadow: 0 2px 40px rgba(47, 43, 50, .2);
+   }
+    
+} 
+
+ @media  screen and (max-width: 320px) {
+   .tarifspan {
+      font-size: 30px;
+      font-weight: 500;
+      margin-top: 190px;
+      margin-left: 20px;
+    }
+    .tabs .tablabels {
+      width: 130px;
+      height: 30px;
+      font-size: 20px;
+      line-height: 40px;
+   }
+   .item-inner {
+      margin-top: 60px;
+      margin-left: 10px;
+      padding: 5px 5px;
+      width: 300px;
+      border-radius: 10px;
+      background: white;
+      box-shadow: 0 2px 40px rgba(47, 43, 50, .2);
+   }
+   .switch {
+      position: absolute;
+      top: 50px;
+      left: 68px;
+      height: 40px;
+      width: 140px;
+      background: #2c4798;
+      border-radius: 40px;
+      transform: translateY(-40px);
+      transition: transform .5s;
+   }
+    
+} 
+ 
+ @media(max-width:959px) {
+    .pricing-item {
+       width: 350px;
+       margin: 0 auto 40px;
+    }
+ }
+ 
+ @media(min-width:960px) {
+    .tabs section {
+       padding: 50px 0 40px;
+    }
+ 
+    .pricing-tables {
+       display: flex;
+       margin: 0 -10px;
+    }
+ 
+    .pricing-item {
+       width: 33.333333333%;
+       padding: 0 10px;
+    }
+ }
+ 
+ @media(min-width:1120px) {
+    .pricing-wrapper {
+       width: 100%;
+       max-width: 1060px;
+       margin: 0 auto;
+    }
+ }

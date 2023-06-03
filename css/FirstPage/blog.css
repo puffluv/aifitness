@@ -1,0 +1,406 @@
+.blogcontent {
+    border: 2px solid #000;
+    border-radius: 5px;
+}
+.blogcontent h2{
+    position: absolute;
+    font-size: 50px;
+    font-weight: 500;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 80px;
+    margin-left: 625px;
+}
+.CommentBlog {
+    position: absolute;
+    font-size: 30px;
+    font-weight: 500;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 230px;
+    margin-left: 1100px;
+}
+.blogcontent img {
+    width: 350px;
+    height: 700px;
+    margin-left: 146px;
+    margin-top: 150px;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+}
+.LastUpdateh1 {
+    position: absolute;
+    font-size: 35px;
+    font-weight: 500;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 230px;
+    margin-left: 510px;
+    font-weight: 500;
+}
+.LastUpdatet1 {
+    position: absolute;
+    font-size: 25px;
+    font-weight: 500;
+    color: rgba(255, 255, 255, 0.63);
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 280px;
+    margin-left: 510px;
+}
+.LastUpdatet2 {
+    position: absolute;
+    font-size: 25px;
+    font-weight: 500;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 330px;
+    margin-left: 510px;
+}
+.LastUpdatet3 {
+    position: absolute;
+    font-size: 25px;
+    font-weight: 500;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 370px;
+    margin-left: 510px;
+}
+.LastUpdatet4 {
+    position: absolute;
+    font-size: 25px;
+    font-weight: 500;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 410px;
+    margin-left: 510px;
+}
+.LastUpdatet5 {
+    position: absolute;
+    font-size: 25px;
+    font-weight: 500;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 450px;
+    margin-left: 510px;
+}
+.LastUpdatet6 {
+    position: absolute;
+    font-size: 25px;
+    font-weight: 500;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 490px;
+    margin-left: 510px;
+}
+
+@media  screen and (max-width: 1272px) {
+    .CommentBlog {
+        display: none;
+    }
+    .blogcontent img {
+        width: 250px;
+        height: 500px;
+        margin-left: 46px;
+        margin-top: 150px;
+        display: flex;
+        justify-content: center;
+        position: absolute;
+       }
+       .blogcontent h2{
+           font-size: 40px;
+           margin-top: 100px;
+           margin-left: 120px;
+       }
+       .LastUpdateh1 {
+           font-size: 30px;
+           margin-top: 230px;
+           margin-left: 320px;
+       }
+       .LastUpdatet1 {
+           font-size: 25px;
+           margin-top: 270px;
+           margin-left: 320px;
+       }
+       .LastUpdatet2 {
+           font-size: 25px;
+           margin-top: 300px;
+           margin-left: 320px;
+       }
+       .LastUpdatet3 {
+           font-size: 25px;
+           margin-top: 360px;
+           margin-left: 320px;
+       }
+       .LastUpdatet4 {
+           font-size: 25px;
+           margin-top: 420px;
+           margin-left: 320px;
+       }
+       .LastUpdatet5 {
+           font-size: 25px;
+           margin-top: 480px;
+           margin-left: 320px;
+       }
+       .LastUpdatet6 {
+           font-size: 25px;
+           margin-top: 540px;
+           margin-left: 320px;
+       }
+} 
+
+@media screen and (max-width: 1024px) {
+    .CommentBlog {
+        display: none;
+    }
+    .blogcontent img {
+        width: 250px;
+        height: 500px;
+        margin-left: 46px;
+        margin-top: 150px;
+        display: flex;
+        justify-content: center;
+        position: absolute;
+       }
+       .blogcontent h2{
+           font-size: 40px;
+           margin-top: 100px;
+           margin-left: 120px;
+       }
+       .LastUpdateh1 {
+           font-size: 30px;
+           margin-top: 230px;
+           margin-left: 320px;
+       }
+       .LastUpdatet1 {
+           font-size: 25px;
+           margin-top: 270px;
+           margin-left: 320px;
+       }
+       .LastUpdatet2 {
+           font-size: 25px;
+           margin-top: 300px;
+           margin-left: 320px;
+       }
+       .LastUpdatet3 {
+           font-size: 25px;
+           margin-top: 360px;
+           margin-left: 320px;
+       }
+       .LastUpdatet4 {
+           font-size: 25px;
+           margin-top: 420px;
+           margin-left: 320px;
+       }
+       .LastUpdatet5 {
+           font-size: 25px;
+           margin-top: 480px;
+           margin-left: 320px;
+       }
+       .LastUpdatet6 {
+           font-size: 25px;
+           margin-top: 540px;
+           margin-left: 320px;
+       }
+}
+
+@media screen and (max-width: 768px) {
+    .CommentBlog {
+        display: none;
+    }
+    .blogcontent img {
+        width: 250px;
+        height: 500px;
+        margin-left: 46px;
+        margin-top: 150px;
+        display: flex;
+        justify-content: center;
+        position: absolute;
+       }
+       .blogcontent h2{
+           font-size: 40px;
+           margin-top: 100px;
+           margin-left: 120px;
+       }
+       .LastUpdateh1 {
+           font-size: 30px;
+           margin-top: 230px;
+           margin-left: 320px;
+       }
+       .LastUpdatet1 {
+           font-size: 25px;
+           margin-top: 270px;
+           margin-left: 320px;
+       }
+       .LastUpdatet2 {
+           font-size: 25px;
+           margin-top: 300px;
+           margin-left: 320px;
+       }
+       .LastUpdatet3 {
+           font-size: 25px;
+           margin-top: 360px;
+           margin-left: 320px;
+       }
+       .LastUpdatet4 {
+           font-size: 25px;
+           margin-top: 420px;
+           margin-left: 320px;
+       }
+       .LastUpdatet5 {
+           font-size: 25px;
+           margin-top: 480px;
+           margin-left: 320px;
+       }
+       .LastUpdatet6 {
+           font-size: 25px;
+           margin-top: 540px;
+           margin-left: 320px;
+       }
+}
+
+@media screen and (max-width: 425px) {
+    .CommentBlog {
+        display: none;
+    }
+    .blogcontent img {
+        display: none;
+       }
+       .blogcontent h2{
+           font-size: 20px;
+           margin-top: 180px;
+           margin-left: 20px;
+       }
+       .LastUpdateh1 {
+           font-size: 15px;
+           margin-top: 230px;
+           margin-left: 20px;
+       }
+       .LastUpdatet1 {
+           font-size: 15px;
+           margin-top: 260px;
+           margin-left: 20px;
+       }
+       .LastUpdatet2 {
+           font-size: 15px;
+           margin-top: 290px;
+           margin-left: 20px;
+       }
+       .LastUpdatet3 {
+           font-size: 15px;
+           margin-top: 320px;
+           margin-left: 20px;
+       }
+       .LastUpdatet4 {
+           font-size: 15px;
+           margin-top: 370px;
+           margin-left: 20px;
+       }
+       .LastUpdatet5 {
+           font-size: 15px;
+           margin-top: 420px;
+           margin-left: 20px;
+       }
+       .LastUpdatet6 {
+           font-size: 15px;
+           margin-top: 470px;
+           margin-left: 20px;
+       }
+}
+
+@media screen and (max-width: 375px) {
+    .CommentBlog {
+        display: none;
+    }
+    .blogcontent img {
+        display: none;
+       }
+       .blogcontent h2{
+           font-size: 20px;
+           margin-top: 180px;
+           margin-left: 20px;
+       }
+       .LastUpdateh1 {
+           font-size: 15px;
+           margin-top: 230px;
+           margin-left: 20px;
+       }
+       .LastUpdatet1 {
+           font-size: 15px;
+           margin-top: 260px;
+           margin-left: 20px;
+       }
+       .LastUpdatet2 {
+           font-size: 15px;
+           margin-top: 290px;
+           margin-left: 20px;
+       }
+       .LastUpdatet3 {
+           font-size: 15px;
+           margin-top: 320px;
+           margin-left: 20px;
+       }
+       .LastUpdatet4 {
+           font-size: 15px;
+           margin-top: 370px;
+           margin-left: 20px;
+       }
+       .LastUpdatet5 {
+           font-size: 15px;
+           margin-top: 420px;
+           margin-left: 20px;
+       }
+       .LastUpdatet6 {
+           font-size: 15px;
+           margin-top: 470px;
+           margin-left: 20px;
+       }
+}
+@media screen and (max-width: 325px) {
+    .CommentBlog {
+        display: none;
+    }
+    .blogcontent img {
+     display: none;
+    }
+    .blogcontent h2{
+        font-size: 20px;
+        margin-top: 180px;
+        margin-left: 20px;
+    }
+    .LastUpdateh1 {
+        font-size: 15px;
+        margin-top: 230px;
+        margin-left: 20px;
+    }
+    .LastUpdatet1 {
+        font-size: 15px;
+        margin-top: 260px;
+        margin-left: 20px;
+    }
+    .LastUpdatet2 {
+        font-size: 15px;
+        margin-top: 290px;
+        margin-left: 20px;
+    }
+    .LastUpdatet3 {
+        font-size: 15px;
+        margin-top: 320px;
+        margin-left: 20px;
+    }
+    .LastUpdatet4 {
+        font-size: 15px;
+        margin-top: 370px;
+        margin-left: 20px;
+    }
+    .LastUpdatet5 {
+        font-size: 15px;
+        margin-top: 420px;
+        margin-left: 20px;
+    }
+    .LastUpdatet6 {
+        font-size: 15px;
+        margin-top: 470px;
+        margin-left: 20px;
+    }
+}

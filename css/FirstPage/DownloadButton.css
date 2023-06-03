@@ -1,0 +1,239 @@
+.downloadbuttonmenuapp {
+	text-decoration: none;
+	display: flex;
+	position: absolute;
+	align-items: center;
+	justify-content: center;
+	top: 545px;
+	left: 194px;																					
+	width: 240px;
+	height: 65px;
+	line-height: 45px;
+  	border-radius: 45px;
+	cursor: pointer;
+	overflow: hidden;
+    color: #fff;
+	margin-left: 8px;
+	z-index: 10;
+ 	font-family: 'Montserrat', sans-serif;
+  	font-size: 14px;
+	text-transform: uppercase;
+	text-align: center;
+	letter-spacing: 3px;
+	font-weight: 600;
+	color: white;
+	background: #2c4798;
+	box-shadow: 0 8px 15px rgba(0, 0, 0, .1);
+	transition: .3s;
+	opacity: 0;
+	filter: blur(10px);
+	animation-name: blur;
+	animation-duration: 1s;
+	animation-delay: 0.5s;
+	animation-fill-mode: forwards;
+  }
+  
+  @keyframes blur {
+	0% {
+	  opacity: 0;
+	  filter: blur(10px);
+	}
+	100% {
+	  opacity: 1;
+	  filter: blur(0);
+	}
+  }
+.downloadbuttonmenuapp:hover {
+	background: white;
+	box-shadow: 0 15px 20px rgba(31, 50, 110, .4);
+	color: #000;
+	transform: translateY(-7px);
+  }
+
+  .downloadbuttonmenuapp2 {
+	text-decoration: none;
+	display: flex;
+	position: absolute;
+	align-items: center;
+	justify-content: center;
+	top: 685px;
+	left: 194px;																					
+	width: 240px;
+	height: 65px;
+	line-height: 45px;
+  	border-radius: 45px;
+	cursor: pointer;
+	overflow: hidden;
+    color: #fff;
+	margin-left: 8px;
+	z-index: 10;
+ 	font-family: 'Montserrat', sans-serif;
+  	font-size: 14px;
+	text-transform: uppercase;
+	text-align: center;
+	letter-spacing: 3px;
+	font-weight: 600;
+	color: white;
+	background: #2c4798;
+	box-shadow: 0 8px 15px rgba(0, 0, 0, .1);
+	transition: .3s;
+	opacity: 0;
+	filter: blur(10px);
+	animation-name: blur;
+	animation-duration: 1s;
+	animation-delay: 0.5s;
+	animation-fill-mode: forwards;
+}
+.downloadbuttonmenuapp2:hover {
+	background: white;
+	box-shadow: 0 15px 20px rgba(31, 50, 110, .4);
+	color: #000;
+	transform: translateY(-7px);
+  }
+
+.text-demover {
+	color: white;
+	position: absolute;
+	margin-top: 20px;
+	margin-left: 10%;
+	font-size: 40px;
+	font-family: 'Montserrat', sans-serif;
+	opacity: 0;
+	filter: blur(10px);
+	animation-name: blur;
+	animation-duration: 1s;
+	animation-delay: 0.5s;
+	animation-fill-mode: forwards;
+}
+.text-fullver {
+	color: white;
+	position: absolute;
+	margin-top: 220px;
+	margin-left: 10%;
+	font-size: 40px;
+	font-family: 'Montserrat', sans-serif;
+	opacity: 0;
+	filter: blur(10px);
+	animation-name: blur;
+	animation-duration: 1s;
+	animation-delay: 0.5s;
+	animation-fill-mode: forwards;
+}
+
+
+@media screen and (max-width: 2560px) {
+	.downloadbuttonmenuapp {
+		left: 246px;
+	}
+	.downloadbuttonmenuapp2 {
+		left: 246px;
+	}
+} 
+
+@media screen and (max-width: 1920px) {
+	.downloadbuttonmenuapp {
+		left: 186px;
+	}
+	.downloadbuttonmenuapp2 {
+		left: 186px;
+	}
+} 
+
+@media  screen and (max-width: 1272px) {
+	.text-demover {
+		font-size: 30px;
+		margin-top: 40px;
+	}
+	.text-fullver {
+		font-size: 30px;
+		margin-top: 213px;
+	}
+	.downloadbuttonmenuapp {
+		top: 480px;
+		left: 120px;
+	}
+	.downloadbuttonmenuapp2 {
+		top: 620px;
+		left: 120px;
+	}
+} 
+
+@media screen and (max-width: 1024px) {
+	.text-demover {
+		font-size: 20px;
+		margin-top: 40px;
+	}
+	.text-fullver {
+		font-size: 20px;
+		margin-top: 213px;
+	}
+	.downloadbuttonmenuapp {
+		top: 420px;
+		left: 100px;
+	}
+	.downloadbuttonmenuapp2 {
+		top: 560px;
+		left: 100px;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.text-demover {
+		font-size: 20px;
+		margin-top: 60px;
+	}
+	.text-fullver {
+		font-size: 20px;
+		margin-top: 273px;
+	}
+	.downloadbuttonmenuapp {
+		top: 460px;
+		left: 68px;
+	}
+	.downloadbuttonmenuapp2 {
+		top: 635px;
+		left: 68px;
+	}
+}
+
+@media screen and (max-width: 425px) {
+	.text-demover {
+		display: none;
+	}
+	.text-fullver {
+		display: none;
+	}
+	.downloadbuttonmenuapp {
+		top: 418px;
+		left: 80px;
+	}
+	.downloadbuttonmenuapp2 {
+		top: 523px;
+		left: 80px;
+	}
+}
+
+@media screen and (max-width: 375px) {
+	.downloadbuttonmenuapp {
+		top: 458px;
+		left: 60px;
+	}
+	.downloadbuttonmenuapp2 {
+		top: 563px;
+		left: 60px;
+	}
+}
+@media screen and (max-width: 325px) {
+	.downloadbuttonmenuapp {
+		top: 458px;
+		left: 30px;
+	}
+	.downloadbuttonmenuapp2 {
+		top: 563px;
+		left: 30px;
+	}
+}
+
+
+
+

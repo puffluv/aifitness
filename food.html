@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="google-signin-client_id" content="980654595572-jhlh7mctkn7iorkfcjkem5s7dceoag8p.apps.googleusercontent.com">
+
+	<title>Питание</title>
+
+	<link rel="shortcut icon" href="/img/ico/icon.png" type="image/png">
+	<link rel="stylesheet" href="libs/swiper/swiper-bundle.min.css">
+	<script src="libs/swiper/swiper-bundle.min.js" defer></script>
+	<script src="libs/particles/particles.js" defer></script>
+	<script src="js/app.js" defer></script>
+
+
+	<link rel="stylesheet" href="css/main.css" media="screen">
+	<link rel="stylesheet" href="css/FirstPage/Nav.css">
+	<link rel="stylesheet" href="css/SecondSlide/MenuH.css">
+	<link rel="stylesheet" href="css/FourthPage/Feedback.css">
+	<link rel="stylesheet" href="css/SecondSlide/CalculateBMI.css">
+
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Alumni+Sans&family=Alumni+Sans+Pinstripe&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+</head>
+<body>
+	<!-- Библиотека google identity services library -->
+	<script src="https://accounts.google.com/gsi/client" async defer></script>
+	<!-- Меню -->
+	<nav>
+		<span><a class="logo" href="index.html">AiFitness</a></span>
+			<ul>
+				<li><a href="index.html">AI Fitness</a></li>
+				<li><a class="active" href="food.html">Питание</a></li>
+				<li><a href="trainer.html">Тренер</a></li>
+				<li><a href="contact.html">Контакты</a></li>
+				<li class="signin">
+					<a href="#" id="custom-google-btn" class="active">
+					<i class="fa fa-google" aria-hidden="true"></i> 
+					Войти
+					</a>
+				</li>
+				<li class="signout">
+						
+				</li>
+			</ul>
+		<label id="icon">
+			<i class="fa fa-bars"></i>
+		</label>
+	</nav>
+	
+	<div class="swiper slider">
+		<div class="swiper-wrapper slider__wrapper">
+
+			<!-- Первый слайд -->
+			<div class="swiper-slide slider__item">
+				
+				<div class="slider__layer layers layer-1" data-swiper-parallax="35%" style="background-image: url(img/screen-1/layer-back.jpg);"></div>
+				<div class="slider__layer layers layer-2" data-swiper-parallax="25%" style="background-image: url(img/screen-1/layer-middle.png);"></div>
+				<canvas class="particles slider__layer" data-swiper-parallax="18%" data-color="#525A6D"></canvas>
+				<div class="slider__layer layers layer-3" data-swiper-parallax="14%" style="background-image: url(img/screen-1/layer-front.png);"></div>
+
+				<div class="containerMenu">
+					<span class="TitleMenu">Вы можете получить наше эксклюзивное меню питания</span>
+					<span class="SpanMenu">Бесплатное меню для набора массы</span>
+					<a class="downloadbuttonmenu" href="img/ico/Меню для набора массы на неделю.pdf" target="_blank">
+						<span class="button-text1">Скачать</span>
+					</a>		  
+
+					<span class="SpanMenu2">Бесплатное меню для похудения</span>
+					<a class="downloadbuttonmenu2" href="img/ico/Меню для похудения на неделю.pdf" target="_blank">
+						<span class="button-text1">Скачать</span>
+					</a>	
+
+					<span class="SpanMenu3">Платное индивидуальное меню</span>
+					<a class="feedbackbuttonmenu" id="open-modal-btn">
+						<span class="button-text">Оставить заявку</span>
+					</a>
+					<!-- Модальное окно фидбэка -->
+					<div class="feedbackmenu" id="modalfeedback">
+						<div class="feedbackmodalmenu">
+							<!-- Кнопка закрытия окна -->
+							<button id="close-modalfeedback" class="modal__close-btnmenu">
+								<svg width="25" height="25" viewBox="0 0 23 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M2.09082 0.03125L22.9999 22.0294L20.909 24.2292L-8.73579e-05 2.23106L2.09082 0.03125Z" fill="#333333"/>
+								<path d="M0 22.0295L20.9091 0.0314368L23 2.23125L2.09091 24.2294L0 22.0295Z" fill="#333333"/>
+								</svg>
+							</button>
+							<!-- Форма обратной связи -->
+							<form class="feedbackformmenu" method="POST">
+								<input type="hidden" name="project_name" value="Фидбек">
+								<input type="hidden" name="admin_email" value="alibihasenov@aktsept-stroy.kz">
+								<input type="hidden" name="form_subject" value="Форма обратной связи AiFitness">
+		
+								<h2 class="WriteUsmenu">Оставьте заявку</h2>
+								<label class="WriteUslabelmenu">Введите Ваше имя</label>
+								<input type="text" name="Name" placeholder="Имя" required>
+								<label class="WriteUslabelmenu">Введите Вашу эл. почту</label>
+								<input type="email" name="E-mail" placeholder="Электронная почта" required>
+								<label class="WriteUslabelmenu">Введите Ваш номер телефона</label>
+								<input type="tel" name="Phone" placeholder="Номер телефона">
+								<label class="WriteUslabelmenu">Введите сообщение</label>
+								<textarea name="Message" cols="30" rows="5" placeholder="Ваше обращение.."></textarea>
+								<button class="sendmenu">Отправить</button>
+								<div class="thanksmenu">
+									Спасибо за Ваше сообщение, мы обязательно прочтем его и по возможности ответим!
+								</div>
+							</form>
+						</div>	
+					</div>
+				</div> 
+
+				<div class="policy">
+					<a href="policy.html" target="_blank">Политика конфиденциальных данных</a>
+				</div>
+				<!-- Калькулятор -->
+				<section class="calculate section">
+					<div class="calculate__container container grid">
+						<div class="calculate__content">
+							<div class="section__titles">
+								<h1 class="section__title-border">Калькулятор</h1>
+								<h1 class="section__title">Индекс массы тела</h1>
+							</div>
+
+							<p class="calculate__description">
+								Добро пожаловать в наш калькулятор индекса массы тела (ИМТ). Этот простой и удобный инструмент поможет 
+								вам оценить ваш текущий уровень физической формы и определить, находится ли ваш вес в пределах нормы.
+							</p>
+
+							<form action="" class="calculate__form" id="calculate-form">
+								<div class="calculate__box">
+									<input type="number" placeholder="Рост" class="calculate__input" id="calculate-cm">
+									<label for="" class="calculate__label">см</label>
+								</div>
+								<div class="calculate__box">
+									<input type="number" placeholder="Вес" class="calculate__input" id="calculate-kg">
+									<label for="" class="calculate__label">кг</label>
+								</div>
+								
+								<button type="sumbit" class="button button__flex">
+									Рассчитать
+								</button>
+							</form>
+
+							<p class="calculate__message" id="calculate-message"></p>
+						</div>
+					</div>
+				</section>
+
+			</div>
+		</div>
+	</div>
+
+	<!-- Скрипты Js -->
+	<script src="js/calculate.js"></script>
+	<script src="js/menu.js"></script>
+	<script src="js/email.js" defer></script>
+	<script src="https://code.jquery.com/jquery-3.7.0.js"></script>
+	<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+	<script src="js/chat.js"></script>
+	<script src="js/download.js"></script>
+	<script src="js/feedbackpopup.js"></script>
+	<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+	<script>
+	const googleBtn = document.getElementById('custom-google-btn');
+const signin = document.querySelector(".signin");
+const signout = document.querySelector(".signout");
+const comment = document.getElementById("comment");
+refresh();
+googleBtn.addEventListener('click', onClickGoogle);
+
+function onClickGoogle () {
+    document.querySelector('.g_id_signin div[role=button]').click();
+}
+async function handleCredentialResponse(googleUser) { // Логин
+    let userData = await axios.get("php/auth/login.php",{ params: { token: googleUser.credential } }).then(res => {
+        return res.data;
+    });
+	localStorage.setItem("token",googleUser.credential); // Создание токена
+    signin.innerHTML = `
+    <img src=${userData.user.picture} style="width:40px;height:40px;border-radius:50%;vertical-align:middle;" alt="avatar"> 
+   `; // Использование аватарки пользователя
+    signout.innerHTML = `
+    <a onclick="logout()">Выйти</a>
+    `;
+    comment.innerHTML = `<input type="text" name="comment" class="input_comment" placeholder="Введите комментарий" />
+         <button class="button_comment" onclick="send()">Отправить</button>`;
+}
+
+async function refresh(){ // Сохранение токена
+    let userData = await axios.get("php/auth/refresh.php",{params:{token:localStorage.getItem("token")}}).then(res => {
+        return res.data;
+    });
+    if(userData.code > 200){ // Перестроение UI в зависимости от ошибки
+        signin.innerHTML = `
+            <a href="#" id="custom-google-btn" onclick="onClickGoogle()" class="active">
+                <i class="fa fa-google" aria-hidden="true"></i> 
+                Войти
+            </a>
+        `;
+        signout.innerHTML = "";
+        comment.innerHTML = ``;
+
+    }else{
+        signin.innerHTML = `
+         <img src=${userData.user.picture} style="width:40px;height:40px;border-radius:50%;vertical-align:middle;" alt="avatar">
+        `;
+         signout.innerHTML = `
+             <a onclick="logout()">Выйти</a>
+         `;
+         comment.innerHTML = `<input type="text" name="comment" class="input_comment" val placeholder="Введите комментарий" />
+         <button class="button_comment" onclick="send()">Отправить</button>`;
+    }
+}
+
+async function logout(){
+    await axios.get("php/auth/logout.php");
+	localStorage.removeItem("token");
+    signin.innerHTML = `
+    <a href="#" id="custom-google-btn" class="active">
+        <i class="fa fa-google" aria-hidden="true"></i> 
+        Войти
+    </a>
+   `;
+    signout.innerHTML = "";
+    comment.innerHTML = ``;
+}
+	</script>
+
+	<script>
+	const commentForm = document.getElementById("comment");
+		const comment_main = document.querySelector(".comment_main");
+
+function send(){
+    axios.get("php/auth/create.php",{params:{comment:document.querySelector(".input_comment").value,token:localStorage.getItem("token")}}).
+    then(res => setComments(res.data))
+    .catch(res => console.log(res));
+    document.querySelector(".input_comment").value = "";
+};
+getComments();
+
+async function getComments(){
+   await axios.get("php/auth/get.php")
+    .then(res => setComments(res.data))
+    .catch(res => console.log(res));
+}
+
+function setComments(comments){
+    let innerHTMLComment = "";
+	let commentsArray = Object.values(comments);
+    for(let i = 0; i < commentsArray.length;i++){
+        innerHTMLComment += `
+        <div class="comment">
+            <img src=${commentsArray[i].avatar} style="width:40px;height:40px;border-radius:50%;vertical-align:middle;" alt="">
+            <div class="displayGrid">
+                <h3 class="commentText">${commentsArray[i].name}</h3>
+                <p class="commentText">${commentsArray[i].comment}</p>
+            </div>
+        </div>`;
+    }
+    comment_main.innerHTML = innerHTMLComment;
+}
+	</script>
+</html>

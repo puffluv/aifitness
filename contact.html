@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="google-signin-client_id" content="980654595572-jhlh7mctkn7iorkfcjkem5s7dceoag8p.apps.googleusercontent.com">
+
+	<title>Обратная связь</title>
+
+	<link rel="shortcut icon" href="/img/ico/icon.png" type="image/png">
+	<link rel="stylesheet" href="libs/swiper/swiper-bundle.min.css">
+	<script src="libs/swiper/swiper-bundle.min.js" defer></script>
+	<script src="libs/particles/particles.js" defer></script>
+	<script src="js/app.js" defer></script>
+
+
+	<link rel="stylesheet" href="css/main.css" media="screen">
+	<link rel="stylesheet" href="css/FirstPage/Nav.css">
+	<link rel="stylesheet" href="css/FivePage/contact.css">
+	<link rel="stylesheet" href="css/FivePage/contactbutton.css">
+	<link rel="stylesheet" href="css/SecondSlide/CalculateBMI.css">
+
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Alumni+Sans&family=Alumni+Sans+Pinstripe&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+</head>
+<body>
+	<!-- Библиотека google identity services library -->
+	<script src="https://accounts.google.com/gsi/client" async defer></script>
+	<!-- Меню -->
+	<nav>
+		<span><a class="logo" href="index.html">AiFitness</a></span>
+			<ul>
+				<li><a href="index.html">AI Fitness</a></li>
+		  		<li><a href="food.html">Питание</a></li>
+     	 		<li><a href="trainer.html">Тренер</a></li>
+      			<li><a class="active" href="contact.html">Контакты</a></li>
+				<li class="signin">
+					<a href="#" id="custom-google-btn" class="active">
+						<i class="fa fa-google" aria-hidden="true"></i> 
+						Войти
+					</a>
+				</li>
+				<li class="signout">
+					
+				</li>
+			</ul>
+		<label id="icon">
+		<i class="fa fa-bars"></i>
+		</label>
+	</nav>
+
+	
+	<div class="swiper slider">
+		<div class="swiper-wrapper slider__wrapper">
+			<!-- Первый слайд -->
+			<div class="swiper-slide slider__item">
+				<div class="slider__layer layers layer-1" data-swiper-parallax="35%" style="background-image: url(img/screen-1/layer-back.jpg);"></div>
+				<div class="slider__layer layers layer-2" data-swiper-parallax="25%" style="background-image: url(img/screen-1/layer-middle.png);"></div>
+				<canvas class="particles slider__layer" data-swiper-parallax="18%" data-color="#525A6D"></canvas>
+				<div class="slider__layer layers layer-3" data-swiper-parallax="14%" style="background-image: url(img/screen-1/layer-front.png);"></div> 
+				
+				<div class="policy">
+					<a href="policy.html" target="_blank">Политика конфиденциальных данных</a>
+				</div>
+				<section class="contact">
+					<div class="content">
+							<h2>Contact Us</h2>
+							<p>Мы всегда готовы ответить на ваши вопросы и обеспечить необходимую поддержку.<br>
+							Если у вас возникли какие-либо вопросы, предложения или отзывы, пожалуйста, свяжитесь с нами:</p>
+					</div>
+					<div class="container">
+						<div class="contactInfo">
+							<div class="box">
+								<div class="icon"><i class="fa fa-map-marker" aria-hidden="true"></i></div>
+								<div class="text">
+									<h3>Местонахождение</h3>
+									<p>Казахстан, Астана</p>
+								</div>
+							</div>
+
+							<div class="box">
+								<div class="icon"><i class="fa fa-phone" aria-hidden="true"></i></div>
+								<div class="text">
+									<h3>Телефон</h3>
+									<p>+7-705-545-9360</p>
+								</div>
+							</div>
+
+							<div class="box">
+								<div class="icon"><i class="fa fa-envelope-o" aria-hidden="true"></i></div>
+								<div class="text">
+									<h3>E-Mail</h3>
+									<p>alibihasenov@gmail.com</p>
+								</div>
+							</div>
+						</div>
+						<div class="contactForm">
+							<form method="POST">
+								<input type="hidden" name="project_name" value="Фидбек">
+								<input type="hidden" name="admin_email" value="alibihasenov@aktsept-stroy.kz">
+								<input type="hidden" name="form_subject" value="Форма обратной связи AiFitness">
+
+								<h2>Send Message</h2>
+								<div class="inputBox">
+									<input type="text" name="Name" required>
+									<span>Ваше имя</span>
+								</div>
+
+								<div class="inputBox">
+									<input type="email" name="E-mail" required>
+									<span>E-Mail</span>
+								</div>
+								<div class="inputBox">
+									<input type="tel" name="Phone" required>
+									<span>Телефон</span>
+								</div>
+
+								<div class="inputBox">
+									<textarea name="Message" required="required"></textarea>
+									<span>Сообщение</span>
+								</div>
+							<button class="send">Отправить</button>
+							<span class="policyspan">Нажимая на кнопку "Отправить", я соглашаюсь с <a href="policy.html">"Политикой конфиденциальных данных"</a></span>
+							<div class="thanks">Спасибо за Ваше сообщение, мы обязательно прочтем его и по возможности ответим!</div>			
+							</form>
+						</div>
+					</div>
+				</section>
+			</div>
+			</div>
+
+		</div>
+	</div>
+	<!-- Скрипты Js -->
+	<script src="js/menu.js"></script>
+	<script src="js/email.js" defer></script>
+	<script src="https://code.jquery.com/jquery-3.7.0.js"></script>
+	<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+	<script src="js/chat.js"></script>
+	<script src="js/download.js"></script>
+	<script src="js/feedbackpopup.js"></script>
+	<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+	<script>
+	const googleBtn = document.getElementById('custom-google-btn');
+const signin = document.querySelector(".signin");
+const signout = document.querySelector(".signout");
+const comment = document.getElementById("comment");
+refresh();
+googleBtn.addEventListener('click', onClickGoogle);
+
+function onClickGoogle () {
+    document.querySelector('.g_id_signin div[role=button]').click();
+}
+async function handleCredentialResponse(googleUser) { // Логин
+    let userData = await axios.get("php/auth/login.php",{ params: { token: googleUser.credential } }).then(res => {
+        return res.data;
+    });
+	localStorage.setItem("token",googleUser.credential); // Создание токена
+    signin.innerHTML = `
+    <img src=${userData.user.picture} style="width:40px;height:40px;border-radius:50%;vertical-align:middle;" alt="avatar"> 
+   `; // Использование аватарки пользователя
+    signout.innerHTML = `
+    <a onclick="logout()">Выйти</a>
+    `;
+    comment.innerHTML = `<input type="text" name="comment" class="input_comment" placeholder="Введите комментарий" />
+         <button class="button_comment" onclick="send()">Отправить</button>`;
+}
+
+async function refresh(){ // Сохранение токена
+    let userData = await axios.get("php/auth/refresh.php",{params:{token:localStorage.getItem("token")}}).then(res => {
+        return res.data;
+    });
+    if(userData.code > 200){ // Перестроение UI в зависимости от ошибки
+        signin.innerHTML = `
+            <a href="#" id="custom-google-btn" onclick="onClickGoogle()" class="active">
+                <i class="fa fa-google" aria-hidden="true"></i> 
+                Войти
+            </a>
+        `;
+        signout.innerHTML = "";
+        comment.innerHTML = ``;
+
+    }else{
+        signin.innerHTML = `
+         <img src=${userData.user.picture} style="width:40px;height:40px;border-radius:50%;vertical-align:middle;" alt="avatar">
+        `;
+         signout.innerHTML = `
+             <a onclick="logout()">Выйти</a>
+         `;
+         comment.innerHTML = `<input type="text" name="comment" class="input_comment" val placeholder="Введите комментарий" />
+         <button class="button_comment" onclick="send()">Отправить</button>`;
+    }
+}
+
+async function logout(){
+    await axios.get("php/auth/logout.php");
+	localStorage.removeItem("token");
+    signin.innerHTML = `
+    <a href="#" id="custom-google-btn" class="active">
+        <i class="fa fa-google" aria-hidden="true"></i> 
+        Войти
+    </a>
+   `;
+    signout.innerHTML = "";
+    comment.innerHTML = ``;
+}
+	</script>
+
+	<script>
+	const commentForm = document.getElementById("comment");
+		const comment_main = document.querySelector(".comment_main");
+
+function send(){
+    axios.get("php/auth/create.php",{params:{comment:document.querySelector(".input_comment").value,token:localStorage.getItem("token")}}).
+    then(res => setComments(res.data))
+    .catch(res => console.log(res));
+    document.querySelector(".input_comment").value = "";
+};
+getComments();
+
+async function getComments(){
+   await axios.get("php/auth/get.php")
+    .then(res => setComments(res.data))
+    .catch(res => console.log(res));
+}
+
+function setComments(comments){
+    let innerHTMLComment = "";
+	let commentsArray = Object.values(comments);
+    for(let i = 0; i < commentsArray.length;i++){
+        innerHTMLComment += `
+        <div class="comment">
+            <img src=${commentsArray[i].avatar} style="width:40px;height:40px;border-radius:50%;vertical-align:middle;" alt="">
+            <div class="displayGrid">
+                <h3 class="commentText">${commentsArray[i].name}</h3>
+                <p class="commentText">${commentsArray[i].comment}</p>
+            </div>
+        </div>`;
+    }
+    comment_main.innerHTML = innerHTMLComment;
+}
+	</script>
+</body>
+</html>

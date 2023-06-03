@@ -1,0 +1,141 @@
+.calculate {
+    position: absolute;
+    margin-top: 300px;
+    margin-left: 1000px;
+    color: white;
+	font-family: 'Montserrat', sans-serif;
+	opacity: 0;
+	filter: blur(10px);
+	animation-name: blur;
+	animation-duration: 1s;
+	animation-delay: 2.5s;
+	animation-fill-mode: forwards;
+	
+}
+.calculate__container {
+    row-gap: 4rem;
+}
+.calculate__content .section__titles {
+    margin-bottom: 1rem;
+    font-size: 2.4rem;
+    font-weight: 500;
+}
+
+.calculate__description {
+    margin-bottom: 0.5rem;
+    font-size: 30px;
+}
+
+.calculate__form {
+    row-gap: 1rem;
+}
+
+.calculate__label {
+    font-size: 1.5rem;
+}
+.calculate__box {
+    position: relative;
+}
+.calculate__input::placeholder {
+    color: white;
+    font-size: 1rem;
+}
+.button {
+    text-decoration: none;
+	display: flex;
+	position: absolute;
+	align-items: center;
+	justify-content: center;	
+    margin-top: 13px;																			
+	width: 240px;
+	height: 65px;
+	line-height: 45px;
+  	border-radius: 45px;
+	cursor: pointer;
+	overflow: hidden;
+    color: #fff;
+	margin-left: 8px;
+	z-index: 10;
+ 	font-family: 'Montserrat', sans-serif;
+  	font-size: 14px;
+	text-transform: uppercase;
+	text-align: center;
+	letter-spacing: 3px;
+	font-weight: 600;
+	color: #524f4e;
+	background: white;
+	box-shadow: 0 8px 15px rgba(0, 0, 0, .1);
+	transition: .3s;
+}
+
+.button:hover {
+	background: rgb(44, 71, 152);
+	box-shadow: 0 15px 20px rgba(31, 50, 110, .4);
+	color: white;
+	transform: translateY(-7px);
+  }
+
+.calculate__message {
+    position: absolute;
+    font-size: 2rem;
+    transform: translateY(5.5rem);
+}
+
+@media  screen and (max-width: 1272px) {
+	.calculate__content .section__titles {
+		margin-bottom: 1rem;
+		font-size: 30px;
+		font-weight: 500;
+	}
+	
+	.calculate__description {
+		margin-bottom: 0.5rem;
+		font-size: 20px;
+	}
+	.calculate {
+	position: absolute;
+	margin-top: 300px;
+	margin-left: 400px;
+	}
+} 
+
+@media  screen and (max-width: 1024px) {
+	.calculate__content .section__titles {
+		margin-bottom: 1rem;
+		font-size: 30px;
+		font-weight: 500;
+	}
+	
+	.calculate__description {
+		margin-bottom: 0.5rem;
+		font-size: 20px;
+	}
+	.calculate {
+	position: absolute;
+	margin-top: 300px;
+	margin-left: 400px;
+	}
+} 
+
+@media  screen and (max-width: 768px) {
+	.calculate__content .section__titles {
+		margin-bottom: 1rem;
+		font-size: 30px;
+		font-weight: 500;
+	}
+	
+	.calculate__description {
+		margin-bottom: 0.5rem;
+		font-size: 20px;
+	}
+	.calculate {
+	position: absolute;
+	margin-top: 300px;
+	margin-left: 400px;
+	}
+} 
+@media  screen and (max-width: 320px) {
+	.calculate {
+	display: none;
+	}
+} 

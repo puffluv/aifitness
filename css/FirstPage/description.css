@@ -1,0 +1,432 @@
+.descriptioninfo .appimg1 {
+    width: 350px;
+    height: 700px;
+    margin-left: 146px;
+    margin-top: 150px;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+}
+.descriptioninfo2 .appimg2 {
+    width: 350px;
+    height: 700px;
+    margin-left: 1320px;
+    margin-top: 150px;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+}
+
+.h1-description {
+	position: absolute;
+	color: white;
+	margin-top: 110px;
+	margin-left: 705px;
+	font-size: 60px;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: normal;
+
+}
+.spandescription {
+    font-family: 'Montserrat', sans-serif;
+    color: 	white;
+    display: flex;
+    margin-left: 500px;
+    margin-top: 250px;
+    font-size: 32px;
+    position: absolute;
+}
+.pdescriptiontext {
+    font-family: 'Montserrat', sans-serif;
+    color: #2c4798;
+    margin-left: 9px;
+    margin-right: 9px;
+    font-size: 32px;
+    /* position: absolute; */
+    animation: slide-in 2s ease-in-out infinite alternate;
+
+}
+.descriptionunderline {
+    font-size: 25px;
+    margin-top: 44px;
+    position: absolute;
+
+}
+.descriptionuuderline {
+    font-size: 25px;
+    margin-top: 89px;
+    position: absolute;
+}
+.descriptiounnderline {
+    font-size: 25px;
+    margin-top: 130px;
+    position: absolute;
+}
+.descriptiouuuderline {
+    font-size: 25px;
+    margin-top: 171px;
+    position: absolute;
+}
+.descriptionunderlene {
+    font-size: 25px;
+    margin-top: 208px;
+    position: absolute;
+    
+}
+.pdescriptiontext2 {
+    font-family: 'Montserrat', sans-serif;
+    color: #2c4798;
+    margin-left: 9px;
+    margin-right: 9px;
+    font-size: 25px;
+    /* position: absolute; */
+    animation: slide-in 2s ease-in-out infinite alternate;
+
+}
+
+.spandescription2 {
+    font-family: 'Montserrat', sans-serif;
+    color: 	white;
+    display: flex;
+    margin-left: 995px;
+    margin-top: 500px;
+    font-size: 25px;
+    position: absolute;
+}
+.spandescription3 {
+    font-family: 'Montserrat', sans-serif;
+    color: 	white;
+    display: flex;
+    margin-left: 855px;
+    margin-top: 540px;
+    font-size: 25px;
+    position: absolute;
+}
+.spandescription4 {
+    font-family: 'Montserrat', sans-serif;
+    color: 	white;
+    display: flex;
+    margin-left: 649px;
+    margin-top: 580px;
+    font-size: 25px;
+    position: absolute;
+}
+.spandescription5 {
+    font-family: 'Montserrat', sans-serif;
+    color: 	white;
+    display: flex;
+    margin-left: 586px;
+    margin-top: 620px;
+    font-size: 28px;
+    position: absolute;
+}
+.spandescription6 {
+    font-family: 'Montserrat', sans-serif;
+    color: 	white;
+    display: flex;
+    margin-left: 539px;
+    margin-top: 660px;
+    font-size: 28px;
+    position: absolute;
+}
+@keyframes slide-in {
+    0% {
+      transform: translateY(0);
+    }
+
+    100% {
+        transform: translateY(-8px);
+    }
+  }
+
+  @media  screen and (max-width: 768px) {
+    .descriptioninfo .appimg1 {
+       display: none;
+    }
+    .descriptioninfo2 .appimg2 {
+       display: none;
+    }
+    .h1-description {
+        margin-top: 80px;
+        margin-left: 205px;
+        font-size: 50px;
+    }
+    .spandescription {
+        margin-left: 100px;
+        margin-top: 160px;
+        font-size: 30px;
+    }
+    .pdescriptiontext {
+        font-size: 30px;
+    }
+    .descriptionunderline {
+        font-size: 30px;
+        margin-top: 84px;
+    }
+    .descriptionuuderline {
+        font-size: 30px;
+        margin-top: 169px;
+    }
+    .descriptiounnderline {
+        font-size: 30px;
+        margin-top: 210px;
+    }
+    .descriptiouuuderline {
+        font-size: 30px;
+        margin-top: 251px;
+    }
+    .descriptionunderlene {
+        font-size: 30px;
+        margin-top: 303px;
+    }
+        
+
+    .pdescriptiontext2 {
+        font-size: 30px;
+    }
+    
+    .spandescription2 {
+        margin-left: 100px;
+        margin-top: 510px;
+        font-size: 30px;
+    }
+    .spandescription3 {
+        margin-left: 100px;
+        margin-top: 550px;
+        font-size: 30px;
+    }
+    .spandescription4 {
+        margin-left: 100px;
+        margin-top: 590px;
+        font-size: 30px;
+    }
+    .spandescription5 {
+        margin-left: 100px;
+        margin-top: 660px;
+        font-size: 30px;
+    }
+    .spandescription6 {
+        margin-left: 100px;
+        margin-top: 730px;
+        font-size: 30px;
+    }
+} 
+
+  @media  screen and (max-width: 425px) {
+    .descriptioninfo .appimg1 {
+       display: none;
+    }
+    .descriptioninfo2 .appimg2 {
+       display: none;
+    }
+    .h1-description {
+        margin-top: 160px;
+        margin-left: 35px;
+        font-size: 30px;
+    }
+    .spandescription {
+        margin-left: 20px;
+        margin-top: 220px;
+        font-size: 15px;
+    }
+    .pdescriptiontext {
+        font-size: 15px;
+    }
+    .descriptionunderline {
+        font-size: 15px;
+        margin-top: 44px;
+    }
+    .descriptionuuderline {
+        font-size: 15px;
+        margin-top: 89px;
+    }
+    .descriptiounnderline {
+        font-size: 15px;
+        margin-top: 130px;
+    }
+    .descriptiouuuderline {
+        font-size: 15px;
+        margin-top: 151px;
+    }
+    .descriptionunderlene {
+        font-size: 15px;
+        margin-top: 173px;
+    }
+        
+
+    .pdescriptiontext2 {
+        font-size: 15px;
+    }
+    
+    .spandescription2 {
+        margin-left: 20px;
+        margin-top: 450px;
+        font-size: 15px;
+    }
+    .spandescription3 {
+        margin-left: 20px;
+        margin-top: 470px;
+        font-size: 15px;
+    }
+    .spandescription4 {
+        margin-left: 20px;
+        margin-top: 490px;
+        font-size: 15px;
+    }
+    .spandescription5 {
+        margin-left: 20px;
+        margin-top: 530px;
+        font-size: 15px;
+    }
+    .spandescription6 {
+        margin-left: 20px;
+        margin-top: 570px;
+        font-size: 15px;
+    }
+} 
+
+  @media  screen and (max-width: 375px) {
+    .descriptioninfo .appimg1 {
+       display: none;
+    }
+    .descriptioninfo2 .appimg2 {
+       display: none;
+    }
+    .h1-description {
+        margin-top: 160px;
+        margin-left: 35px;
+        font-size: 30px;
+    }
+    .spandescription {
+        margin-left: 20px;
+        margin-top: 220px;
+        font-size: 15px;
+    }
+    .pdescriptiontext {
+        font-size: 15px;
+    }
+    .descriptionunderline {
+        font-size: 15px;
+        margin-top: 44px;
+    }
+    .descriptionuuderline {
+        font-size: 15px;
+        margin-top: 89px;
+    }
+    .descriptiounnderline {
+        font-size: 15px;
+        margin-top: 130px;
+    }
+    .descriptiouuuderline {
+        font-size: 15px;
+        margin-top: 151px;
+    }
+    .descriptionunderlene {
+        font-size: 15px;
+        margin-top: 173px;
+    }
+        
+
+    .pdescriptiontext2 {
+        font-size: 15px;
+    }
+    
+    .spandescription2 {
+        margin-left: 20px;
+        margin-top: 450px;
+        font-size: 15px;
+    }
+    .spandescription3 {
+        margin-left: 20px;
+        margin-top: 470px;
+        font-size: 15px;
+    }
+    .spandescription4 {
+        margin-left: 20px;
+        margin-top: 490px;
+        font-size: 15px;
+    }
+    .spandescription5 {
+        margin-left: 20px;
+        margin-top: 530px;
+        font-size: 15px;
+    }
+    .spandescription6 {
+        margin-left: 20px;
+        margin-top: 570px;
+        font-size: 15px;
+    }
+} 
+
+  @media  screen and (max-width: 320px) {
+    .descriptioninfo .appimg1 {
+       display: none;
+    }
+    .descriptioninfo2 .appimg2 {
+       display: none;
+    }
+    .h1-description {
+        margin-top: 160px;
+        margin-left: 35px;
+        font-size: 30px;
+    }
+    .spandescription {
+        margin-left: 20px;
+        margin-top: 220px;
+        font-size: 15px;
+    }
+    .pdescriptiontext {
+        font-size: 15px;
+    }
+    .descriptionunderline {
+        font-size: 15px;
+        margin-top: 44px;
+    }
+    .descriptionuuderline {
+        font-size: 15px;
+        margin-top: 89px;
+    }
+    .descriptiounnderline {
+        font-size: 15px;
+        margin-top: 130px;
+    }
+    .descriptiouuuderline {
+        font-size: 15px;
+        margin-top: 151px;
+    }
+    .descriptionunderlene {
+        font-size: 15px;
+        margin-top: 173px;
+    }
+        
+
+    .pdescriptiontext2 {
+        font-size: 15px;
+    }
+    
+    .spandescription2 {
+        margin-left: 20px;
+        margin-top: 450px;
+        font-size: 15px;
+    }
+    .spandescription3 {
+        margin-left: 20px;
+        margin-top: 470px;
+        font-size: 15px;
+    }
+    .spandescription4 {
+        margin-left: 20px;
+        margin-top: 490px;
+        font-size: 15px;
+    }
+    .spandescription5 {
+        margin-left: 20px;
+        margin-top: 530px;
+        font-size: 15px;
+    }
+    .spandescription6 {
+        margin-left: 20px;
+        margin-top: 570px;
+        font-size: 15px;
+    }
+} 

@@ -1,0 +1,594 @@
+* {box-sizing: border-box;}
+.our-trainer {
+	font-family: 'Montserrat', sans-serif;
+}
+.our-trainer h1 {
+    position: absolute;
+    text-align: center;
+    color: white;
+    font-size: 50px;
+    font-weight: 500;
+    color: white;
+    margin-top: 190px;
+    margin-left: 693px;
+    opacity: 0;
+    transform: translateY(20px);
+    animation-name: fadeIn;
+    animation-duration: 1s;
+    animation-delay: 0.5s;
+    animation-fill-mode: forwards;
+  }
+  
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+.our-trainer img {
+    position: absolute;
+    margin-top: 150px;
+    margin-left: 233px;
+    transform: translateY(20px);
+    opacity: 0;
+    animation-name: fadeIn;
+    animation-duration: 1s;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+  }
+.trainer-name {
+    position: absolute;
+    color: white;
+    font-size: 40px;
+    font-weight: 500;
+    color: white;
+    margin-top: 770px;
+    margin-left: 310px;
+    transform: translateY(20px);
+    opacity: 0;
+    animation-name: fadeIn;
+    animation-duration: 1s;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+  }
+.trainer-description {
+    position: absolute;
+    color: white;
+    font-size: 35px;
+    font-weight: 500;
+    color: white;
+    margin-top: 300px;
+    margin-left: 700px;
+    opacity: 0;
+	filter: blur(10px);
+	animation-name: blur;
+	animation-duration: 1s;
+	animation-delay: 1.5s;
+	animation-fill-mode: forwards;
+  }
+  
+  @keyframes blur {
+	0% {
+	  opacity: 0;
+	  filter: blur(10px);
+	}
+	100% {
+	  opacity: 1;
+	  filter: blur(0);
+	}
+  }
+
+.trainer-description5 {
+    position: absolute;
+    color: white;
+    font-size: 35px;
+    font-weight: 500;
+    color: white;
+    margin-top: 600px;
+    margin-left: 700px;
+    z-index: 10;
+    font-family: 'Montserrat', sans-serif;
+    opacity: 0;
+	filter: blur(10px);
+	animation-name: blur;
+	animation-duration: 1s;
+	animation-delay: 3.5s;
+	animation-fill-mode: forwards;
+}
+
+.quotespanh {
+    position: absolute;
+    text-align: center;
+    color: white;
+    font-size: 40px;
+    font-weight: 500;
+    margin-top: 100px;
+    margin-left: 40px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.quotebody {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.quotecontainer {
+    width: 1100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.quotecontainer .block:hover {
+    transform: translateY(-20px);
+}
+
+.quotecontainer .block {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 420px;
+    height: 640px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 0 20px #000;
+    margin-top: 270px;
+    margin-right: 30px;
+    transition: .7s;
+}
+
+.quotecontainer .block .quotecontent {
+    padding: 30px;
+    text-align: center;
+}
+
+.quotecontainer .block .quote-img {
+    width: 50px;
+
+}
+
+.quotecontainer .block .quotecontent p {
+    color: #000;
+    padding: 20px 0;
+    font-size: 20px;
+}
+.quotecontainer .block .quotecontent .face {
+    width: 80px;
+    border-radius: 50px;
+    background: #2c4798;
+    padding: 4px;
+}
+
+.quotecontainer .block .quotecontent h3 {
+    margin-top: 20px;
+    color: #2c4798;
+    font-size: 20px;
+    letter-spacing: 1px;
+    font-weight: 700;
+}
+
+/* howitworks */
+.howitworkstitle {
+  position: absolute;
+  text-align: center;
+  color: white;
+  font-size: 70px;
+  font-weight: 500;
+  margin-top: 80px;
+  margin-left: 650px;
+	font-family: 'Montserrat', sans-serif;
+}
+
+.textfirsthow {
+  color: white;
+  position: absolute;
+  width: 1000px;
+  font-size: 40px;
+  margin-top: 200px;
+  margin-left: 100px;
+}
+.textsecondhow {
+  color: white;
+  position: absolute;
+  width: 1000px;
+  font-size: 40px;
+  margin-top: 400px;
+  margin-left: 100px;
+}
+
+.textthirdhow {
+  color: white;
+  position: absolute;
+  width: 1000px;
+  font-size: 40px;
+  margin-top: 600px;
+  margin-left: 100px;
+}
+.imagetrainer img {
+  position: absolute;
+  margin-top: 70px;
+  margin-left: 1200px;
+  width: 450px;
+  height: 900px;
+}
+
+.bluetext {
+  font-weight: bold;
+  font-family: 'Montserrat', sans-serif;
+  color: lightgray;
+  margin-left: 9px;
+  margin-right: 9px;
+  font-size: 40px;
+  position: relative;
+  animation: slide-in 2s ease-in-out infinite alternate;
+}
+
+@keyframes slide-in {
+  0% {
+    transform: translateY(0);
+  }
+
+  100% {
+      transform: translateY(-8px);
+  }
+}
+
+@media  screen and (max-width: 1272px) {
+  .our-trainer img {
+    display: block;
+    margin-top: 100px;
+    margin-left: 23px;
+  }
+  .our-trainer h1 {
+    font-size: 40px;
+    margin-top: 170px;
+    margin-left: 523px;
+  }
+  .trainer-description {
+    font-size: 25px;
+    margin-top: 250px;
+    margin-left: 523px;
+  }
+  .trainer-description5 {
+    font-size: 25px;
+    margin-top: 550px;
+    margin-left: 523px;
+}
+.trainer-name {
+  display: block;
+  margin-top: 723px;
+  margin-left: 103px;
+}
+.howitworkstitle {
+  font-size: 60px;
+  margin-top: 100px;
+  margin-left: 400px;
+}
+
+.textfirsthow {
+  width: 800px;
+  font-size: 30px;
+  margin-top: 240px;
+  margin-left: 40px;
+}
+.textsecondhow {
+  width: 800px;
+  font-size: 30px;
+  margin-top: 410px;
+  margin-left: 40px;
+}
+
+.textthirdhow {
+  width: 800px;
+  font-size: 30px;
+  margin-top: 580px;
+  margin-left: 40px;
+}
+.bluetext {
+  margin-left: 9px;
+  margin-right: 9px;
+  font-size: 30px;
+}
+.imagetrainer img {
+  position: absolute;
+  margin-top: 100px;
+  margin-left: 800px;
+  width: 350px;
+  height: 700px;
+}
+}
+
+@media  screen and (max-width: 1024px) {
+  .our-trainer img {
+    display: none;
+  }
+  .our-trainer h1 {
+    font-size: 40px;
+    margin-top: 170px;
+    margin-left: 123px;
+  }
+  .trainer-description {
+    font-size: 25px;
+    margin-top: 250px;
+    margin-left: 23px;
+  }
+  .trainer-description5 {
+    font-size: 25px;
+    margin-top: 550px;
+    margin-left: 23px;
+}
+.trainer-name {
+  display: none;
+}
+.howitworkstitle {
+  font-size: 30px;
+  margin-top: 180px;
+  margin-left: 40px;
+}
+
+.textfirsthow {
+  width: 350px;
+  font-size: 20px;
+  margin-top: 240px;
+  margin-left: 20px;
+}
+.textsecondhow {
+  width: 350px;
+  font-size: 20px;
+  margin-top: 410px;
+  margin-left: 20px;
+}
+
+.textthirdhow {
+  width: 350px;
+  font-size: 20px;
+  margin-top: 580px;
+  margin-left: 20px;
+}
+.bluetext {
+  margin-left: 9px;
+  margin-right: 9px;
+  font-size: 20px;
+}
+.imagetrainer img {
+  position: absolute;
+  margin-top: 100px;
+  margin-left: 350px;
+  width: 350px;
+  height: 700px;
+}
+
+.howitworkstitle {
+  font-size: 50px;
+  margin-top: 100px;
+  margin-left: 300px;
+}
+
+.textfirsthow {
+  width: 600px;
+  font-size: 25px;
+  margin-top: 240px;
+  margin-left: 40px;
+}
+.textsecondhow {
+  width: 600px;
+  font-size: 25px;
+  margin-top: 410px;
+  margin-left: 40px;
+}
+
+.textthirdhow {
+  width: 600px;
+  font-size: 25px;
+  margin-top: 580px;
+  margin-left: 40px;
+}
+.bluetext {
+  margin-left: 9px;
+  margin-right: 9px;
+  font-size: 25px;
+}
+.imagetrainer img {
+  position: absolute;
+  margin-top: 100px;
+  margin-left: 600px;
+  width: 350px;
+  height: 700px;
+}
+}
+
+
+@media  screen and (max-width: 768px) {
+  .our-trainer img {
+    display: none;
+  }
+  .our-trainer h1 {
+    font-size: 40px;
+    margin-top: 170px;
+    margin-left: 123px;
+  }
+  .trainer-description {
+    font-size: 25px;
+    margin-top: 250px;
+    margin-left: 23px;
+  }
+  .trainer-description5 {
+    font-size: 25px;
+    margin-top: 550px;
+    margin-left: 23px;
+}
+.trainer-name {
+  display: none;
+}
+
+.howitworkstitle {
+  font-size: 50px;
+  margin-top: 100px;
+  margin-left: 200px;
+}
+
+.textfirsthow {
+  width: 400px;
+  font-size: 20px;
+  margin-top: 240px;
+  margin-left: 20px;
+}
+.textsecondhow {
+  width: 400px;
+  font-size: 20px;
+  margin-top: 410px;
+  margin-left: 20px;
+}
+
+.textthirdhow {
+  width: 400px;
+  font-size: 20px;
+  margin-top: 580px;
+  margin-left: 20px;
+}
+.bluetext {
+  margin-left: 9px;
+  margin-right: 9px;
+  font-size: 20px;
+}
+.imagetrainer img {
+  position: absolute;
+  margin-top: 100px;
+  margin-left: 390px;
+  width: 350px;
+  height: 700px;
+}
+.quotespanh {
+  font-size: 30px;
+  margin-top: 140px;
+  margin-left: 10px;
+}
+}
+@media  screen and (max-width: 425px) {
+  .our-trainer img {
+    display: none;
+  }
+  .our-trainer h1 {
+    font-size: 30px;
+    margin-top: 170px;
+    margin-left: 23px;
+  }
+  .trainer-description {
+    font-size: 17px;
+    margin-top: 250px;
+    margin-left: 23px;
+  }
+  .trainer-description5 {
+    font-size: 17px;
+    margin-top: 550px;
+    margin-left: 23px;
+}
+.trainer-name {
+  display: none;
+}
+
+.howitworkstitle {
+  font-size: 30px;
+  margin-top: 180px;
+  margin-left: 40px;
+}
+
+.textfirsthow {
+  width: 300px;
+  font-size: 20px;
+  margin-top: 240px;
+  margin-left: 20px;
+}
+.textsecondhow {
+  width: 300px;
+  font-size: 20px;
+  margin-top: 410px;
+  margin-left: 20px;
+}
+
+.textthirdhow {
+  width: 300px;
+  font-size: 20px;
+  margin-top: 580px;
+  margin-left: 20px;
+}
+.bluetext {
+  margin-left: 9px;
+  margin-right: 9px;
+  font-size: 20px;
+}
+.quotespanh {
+  font-size: 20px;
+  margin-top: 170px;
+  margin-left: 10px;
+}
+}
+
+@media  screen and (max-width: 320px) {
+  .our-trainer img {
+    display: none;
+  }
+  .our-trainer h1 {
+    font-size: 30px;
+    margin-top: 170px;
+    margin-left: 23px;
+  }
+  .trainer-description {
+    font-size: 17px;
+    margin-top: 250px;
+    margin-left: 23px;
+  }
+  .trainer-name {
+    display: none;
+  }
+  .trainer-description5 {
+    font-size: 17px;
+    margin-top: 550px;
+    margin-left: 23px;
+}
+.howitworkstitle {
+  font-size: 30px;
+  margin-top: 180px;
+  margin-left: 40px;
+}
+
+.textfirsthow {
+  width: 300px;
+  font-size: 20px;
+  margin-top: 240px;
+  margin-left: 20px;
+}
+.textsecondhow {
+  width: 300px;
+  font-size: 20px;
+  margin-top: 410px;
+  margin-left: 20px;
+}
+
+.textthirdhow {
+  width: 300px;
+  font-size: 20px;
+  margin-top: 580px;
+  margin-left: 20px;
+}
+.bluetext {
+  margin-left: 9px;
+  margin-right: 9px;
+  font-size: 20px;
+}
+
+.quotespanh {
+  font-size: 20px;
+  margin-top: 170px;
+  margin-left: 10px;
+}
+
+} 
