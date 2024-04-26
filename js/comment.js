@@ -9,6 +9,7 @@ function send(){
 };
 getComments();
 
+// test
 async function getComments(){
    await axios.get("php/auth/get.php")
     .then(res => {
