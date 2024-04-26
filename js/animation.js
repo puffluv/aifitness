@@ -7,6 +7,7 @@ function onEntry(entry) {
     });
 }
 
+// test
 let options = {
     threshold: [0.5] };
     let observer = new
